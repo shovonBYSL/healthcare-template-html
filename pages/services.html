@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="true"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- links end -->
+    <title>Services</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="stylesheet" href="../assets/css/buttons.css" />
+    <link rel="stylesheet" href="../assets/css/navigations.css" />
+    <link rel="stylesheet" href="../assets/css/swiperSlider.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <!-- <link rel="stylesheet" href="../dist/output.css" /> -->
+  </head>
+
+  <body>
+    <!-- preloader -->
+    <div class="loader">
+      <div
+        class="fixed left-0 top-0 bg-white z-[999] h-screen w-screen flex justify-center items-center"
+      >
+        <div class="w-3/4 sm:w-1/2 lg:w-2/5 xl:w-1/4">
+          <lottie-player
+            src="../assets/animation/loader.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+    </div>
+    <!-- preloader -->
+
+    <!-- header start -->
+    <div class="z-50 py-4 lg:py-5 bg-primary-600 text-white">
+      <div class="container">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-2"
+        >
+          <div class="flex flex-col md:flex-row items-center gap-1 lg:gap-7">
+            <div class="flex items-center gap-2">
+              <img
+                src="../assets/images/icons/map.svg"
+                alt="address"
+                class="h-4 lg:h-6"
+              />
+              <p class="text-xxs lg:text-sm font-medium">
+                New Airport Road Banani C/A, Dhaka-1213
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <img
+                src="../assets/images/icons/phone.svg"
+                alt="phone number"
+                class="h-4 lg:h-6"
+              />
+              <p class="text-xxs lg:text-sm font-medium">9600 2215 1215</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <img
+                src="../assets/images/icons/envelope.svg"
+                alt="email"
+                class="h-4 lg:h-6"
+              />
+              <p class="text-xxs lg:text-sm font-medium">info@company.com</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/"
+            >
+              <img
+                src="../assets/images/social/linkedIn.svg"
+                alt="linkedIn logo"
+                class="h-4 lg:h-6"
+              />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.facebook.com/"
+            >
+              <img
+                src="../assets/images/social/facebook.svg"
+                alt="facebook logo"
+                class="h-4 lg:h-6"
+              />
+            </a>
+            <a rel="noreferrer" target="_blank" href="https://twitter.com/">
+              <img
+                src="../assets/images/social/twitter.svg"
+                alt="twitter logo"
+                class="h-4 lg:h-6"
+              />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.instagram.com/"
+            >
+              <img
+                src="../assets/images/social/instagram.svg"
+                alt="instagram logo"
+                class="h-4 lg:h-6"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header end -->
+
+    <!-- navbar start -->
+    <header
+      class="z-50 sticky top-0 bg-white shadow-[0px_4px_15px_0px_rgba(112,128,176,0.1)] py-2 lg:py-3"
+    >
+      <nav
+        class="container flex flex-wrap lg:flex-nowrap items-center justify-between w-full transition-all duration-700 ease-in overflow-hidden lg:overflow-visible"
+      >
+        <a href="../index.html">
+          <img
+            src="../assets/images/logo/logo.svg"
+            alt="logo"
+            class="h-10 lg:h-16 w-[138px] lg:w-[200px]"
+          />
+        </a>
+        <div class="flex items-center gap-3">
+          <div class="lg:hidden mb-[2px]">
+            <a href="./appointment.html">
+              <button
+                class="z-10 relative overflow-hidden btn-slide-secondary px-2.5 lg:px-7 py-[6px] lg:py-2.5 rounded-sm md:rounded xl:rounded-lg text-white text-[8px] md:text-xs xl:text-base transition-all duration-300"
+              >
+                Appointment
+              </button>
+            </a>
+          </div>
+          <div id="menu-button" class="lg:hidden block">
+            <div class="bar-one"></div>
+            <div class="bar-two"></div>
+            <div class="bar-three"></div>
+          </div>
+        </div>
+        <div id="menu" class="w-full lg:w-auto lg:flex lg:items-center hidden">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:space-x-10 space-y-2 lg:space-y-0 p-4 lg:p-0"
+          >
+            <div>
+              <a
+                href="../index.html"
+                class="text-tertiary-300 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                Home
+              </a>
+            </div>
+            <div>
+              <a
+                href="./about.html"
+                class="text-tertiary-300 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                About
+              </a>
+            </div>
+            <div>
+              <a
+                href="./services.html"
+                class="text-primary-600 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                Services
+                <span class="block h-[2px] w-6 bg-primary-600 rounded-xl" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="./doctors.html"
+                class="text-tertiary-300 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                Doctors
+              </a>
+            </div>
+            <div>
+              <div class="relative group">
+                <button class="flex items-center group cursor-pointer">
+                  <p
+                    class="text-tertiary-300 text-sm lg:text-base lg:group-hover:text-primary-400 transition-all duration-200"
+                  >
+                    Blog
+                  </p>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    class="text-tertiary-300 text-lg transition-all duration-200 lg:group-hover:text-primary-400"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+
+                <div
+                  class="invisible group-hover:visible absolute left-0 top-6 pt-4 hidden lg:block"
+                >
+                  <div
+                    class="shadow-[0px_18px_30px_0px_rgba(112,128,176,0.2)] rounded bg-white px-3 pt-3 pb-6 space-y-2 w-max min-w-[150px]"
+                  >
+                    <a href="./blog-grid.html">
+                      <p
+                        class="px-2.5 py-1 rounded block text-sm lg:text-base hover:text-primary-400 text-tertiary-300"
+                      >
+                        Blog Grid
+                      </p>
+                    </a>
+                    <a href="./blog-list.html">
+                      <p
+                        class="px-2.5 py-1 rounded block text-sm lg:text-base hover:text-primary-400 text-tertiary-300"
+                      >
+                        Blog List
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="bg-tertiary-10 rounded mt-1 px-4 py-2 flex flex-col gap-1 lg:hidden"
+                >
+                  <a href="./blog-grid.html">
+                    <p class="text-sm lg:text-base text-tertiary-300">
+                      Blog Grid
+                    </p>
+                  </a>
+                  <a href="./blog-list.html">
+                    <p class="text-sm lg:text-base text-tertiary-300">
+                      Blog List
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a
+                href="./contact.html"
+                class="text-tertiary-300 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                Contact
+              </a>
+            </div>
+            <div class="hidden lg:block">
+              <a href="./appointment.html">
+                <button
+                  class="z-10 relative overflow-hidden btn-slide-secondary px-2.5 lg:px-7 py-[6px] lg:py-2.5 rounded-sm md:rounded xl:rounded-lg text-white text-[8px] md:text-xs xl:text-base transition-all duration-300"
+                >
+                  Appointment
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- logo slider start -->
+    <div class="bg-tertiary-10 py-6 xl:py-10 serviceSlider">
+      <div class="container">
+        <div class="swiper swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_1.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_2.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_3.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_1.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_2.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_3.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_1.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_2.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_3.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- logo slider end -->
+
+    <!-- footer start -->
+    <div class="text-white bg-primary-700">
+      <div class="container">
+        <a href="/"
+          ><img
+            src="../assets/images/logo/logoLight.svg"
+            alt="logo"
+            class="w-max mx-auto py-6"
+        /></a>
+        <div class="flex flex-col md:flex-row justify-around text-center">
+          <div class="w-full border-t border-b">
+            <div class="py-6 md:py-2 lg:py-5 md:my-5 false">
+              <p class="font-semibold lg:text-lg xl:text-2xl mb-2">
+                Office Address
+              </p>
+              <p class="text-xs lg:text-sm xl:text-base">
+                Kalachadpur (North Baridhara),
+              </p>
+              <p class="text-xs lg:text-sm xl:text-base">
+                Gulshan, Dhaka 1212, Bangladesh.
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:border-t md:border-b">
+            <div class="py-6 md:py-2 lg:py-5 md:my-5 md:border-l md:border-r">
+              <p class="font-semibold lg:text-lg xl:text-2xl mb-2">
+                Talk to expert
+              </p>
+              <p class="text-xs lg:text-sm xl:text-base">+9600 0012 4521</p>
+              <p class="text-xs lg:text-sm xl:text-base">+2500 0012 4522</p>
+            </div>
+          </div>
+          <div class="w-full border-t border-b">
+            <div class="py-6 md:py-2 lg:py-5 md:my-5 false">
+              <p class="font-semibold lg:text-lg xl:text-2xl mb-2">Email Us</p>
+              <p class="text-xs lg:text-sm xl:text-base">info@medicare.com</p>
+              <p class="text-xs lg:text-sm xl:text-base">
+                Example@medicare.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="py-10 grid grid-cols-12 gap-6">
+          <div
+            class="col-span-12 md:col-span-7 xl:col-span-8 flex flex-col md:flex-row justify-around lg:justify-evenly gap-6"
+          >
+            <div>
+              <p
+                class="font-semibold lg:text-lg xl:text-2xl mb-2 text-center md:text-start"
+              >
+                Quick Links
+              </p>
+              <div class="space-y-2">
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="/"
+                  >Home</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./about.html"
+                  >About Us</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./services.html"
+                  >Services</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./blog-grid.html"
+                  >Blog Grid</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./blog-list.html"
+                  >Blog List</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./contact.html"
+                  >Contact</a
+                >
+              </div>
+            </div>
+            <div>
+              <p
+                class="font-semibold lg:text-lg xl:text-2xl mb-2 text-center md:text-start"
+              >
+                Services
+              </p>
+              <div class="space-y-2">
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./services.html"
+                  >Health Check</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./services.html"
+                  >Doctor Appointment</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./services.html"
+                  >Online Pharmacy</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./services.html"
+                  >Abmulace Service</a
+                >
+              </div>
+            </div>
+            <div>
+              <p
+                class="font-semibold lg:text-lg xl:text-2xl mb-2 text-center md:text-start"
+              >
+                Open Hours
+              </p>
+              <div class="space-y-2">
+                <p
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                >
+                  Open at 09: 00 AM
+                </p>
+                <p
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                >
+                  Close at 11.00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-12 md:col-span-5 xl:col-span-4 w-max mx-auto md:mx-0 space-y-2 text-center md:text-start"
+          >
+            <form class="flex items-center gap-3">
+              <input
+                type="email"
+                placeholder="Enter your email adderss"
+                class="bg-transparent border rounded px-3 md:px-4 py-2 placeholder-white text-xs lg:text-sm xl:text-base outline-0 focus:shadow-xl"
+              />
+              <button
+                type="submit"
+                class="px-3 lg:px-7 py-2 bg-primary-500 hover:bg-primary-600 hover:shadow-xl rounded border text-xs lg:text-sm xl:text-base transition-all duration-300"
+              >
+                Send
+              </button>
+            </form>
+            <p class="text-xs lg:text-sm">Subcribe to get updates</p>
+            <p class="font-semibold pt-4">Follow Us</p>
+            <div class="flex items-center gap-2 w-max mx-auto md:mx-0">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.linkedin.com/"
+              >
+                <img
+                  src="../assets/images/social/linkedIn.svg"
+                  alt="linkedIn logo"
+                />
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.facebook.com/"
+              >
+                <img
+                  src="../assets/images/social/facebook.svg"
+                  alt="facebook logo"
+                />
+              </a>
+              <a rel="noreferrer" target="_blank" href="https://twitter.com/">
+                <img
+                  src="../assets/images/social/twitter.svg"
+                  alt="twitter logo"
+                />
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.instagram.com/"
+              >
+                <img
+                  src="../assets/images/social/instagram.svg"
+                  alt="instagram logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        class="py-3 text-center text-xs lg:text-sm xl:text-base bg-primary-600"
+      >
+        copyright ©2022 reserved by&nbsp;<span class="xl:font-semibold"
+          >medical healthcare center</span
+        >
+      </p>
+    </div>
+    <!-- footer end -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/common.js"></script>
+  </body>
+</html>

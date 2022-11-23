@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- links start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="true"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- links end -->
+
+    <title>Medical</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./assets/css/animations.css" />
+    <link rel="stylesheet" href="./assets/css/buttons.css" />
+    <link rel="stylesheet" href="./assets/css/navigations.css" />
+    <link rel="stylesheet" href="./assets/css/swiperSlider.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <!-- <link rel="stylesheet" href="./dist/output.css" /> -->
+  </head>
+
+  <body>
+    <!-- preloader -->
+    <div class="loader">
+      <div
+        class="fixed left-0 top-0 bg-white z-[999] h-screen w-screen flex justify-center items-center"
+      >
+        <div class="w-3/4 sm:w-1/2 lg:w-2/5 xl:w-1/4">
+          <lottie-player
+            src="./assets/animation/loader.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+    </div>
+    <!-- preloader -->
+
+    <!-- header start -->
+    <div class="z-50 py-4 lg:py-5 bg-primary-600 text-white">
+      <div class="container">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-2"
+        >
+          <div class="flex flex-col md:flex-row items-center gap-1 lg:gap-7">
+            <div class="flex items-center gap-2">
+              <img
+                src="./assets/images/icons/map.svg"
+                alt="address"
+                class="h-4 lg:h-6"
+              />
+              <p class="text-xxs lg:text-sm font-medium">
+                New Airport Road Banani C/A, Dhaka-1213
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <img
+                src="./assets/images/icons/phone.svg"
+                alt="phone number"
+                class="h-4 lg:h-6"
+              />
+              <p class="text-xxs lg:text-sm font-medium">9600 2215 1215</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <img
+                src="./assets/images/icons/envelope.svg"
+                alt="email"
+                class="h-4 lg:h-6"
+              />
+              <p class="text-xxs lg:text-sm font-medium">info@company.com</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/"
+            >
+              <img
+                src="./assets/images/social/linkedIn.svg"
+                alt="linkedIn logo"
+                class="h-4 lg:h-6"
+              />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.facebook.com/"
+            >
+              <img
+                src="./assets/images/social/facebook.svg"
+                alt="facebook logo"
+                class="h-4 lg:h-6"
+              />
+            </a>
+            <a rel="noreferrer" target="_blank" href="https://twitter.com/">
+              <img
+                src="./assets/images/social/twitter.svg"
+                alt="twitter logo"
+                class="h-4 lg:h-6"
+              />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.instagram.com/"
+            >
+              <img
+                src="./assets/images/social/instagram.svg"
+                alt="instagram logo"
+                class="h-4 lg:h-6"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header end -->
+
+    <!-- navbar start -->
+    <header
+      class="z-50 sticky top-0 bg-white shadow-[0px_4px_15px_0px_rgba(112,128,176,0.1)] py-2 lg:py-3"
+    >
+      <nav
+        class="container flex flex-wrap lg:flex-nowrap items-center justify-between w-full transition-all duration-700 ease-in overflow-hidden lg:overflow-visible"
+      >
+        <a href="./index.html">
+          <img
+            src="./assets/images/logo/logo.svg"
+            alt="logo"
+            class="h-10 lg:h-16 w-[138px] lg:w-[200px]"
+          />
+        </a>
+        <div class="flex items-center gap-3">
+          <div class="lg:hidden mb-[2px]">
+            <a href="./pages/appointment.html">
+              <button
+                class="z-10 relative overflow-hidden btn-slide-secondary px-2.5 lg:px-7 py-[6px] lg:py-2.5 rounded-sm md:rounded xl:rounded-lg text-white text-[8px] md:text-xs xl:text-base transition-all duration-300"
+              >
+                Appointment
+              </button>
+            </a>
+          </div>
+          <div id="menu-button" class="lg:hidden block">
+            <div class="bar-one"></div>
+            <div class="bar-two"></div>
+            <div class="bar-three"></div>
+          </div>
+        </div>
+        <div id="menu" class="w-full lg:w-auto lg:flex lg:items-center hidden">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:space-x-10 space-y-2 lg:space-y-0 p-4 lg:p-0"
+          >
+            <div>
+              <a
+                href="./index.html"
+                class="text-primary-600 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                Home
+                <span class="block h-[2px] w-6 bg-primary-600 rounded-xl" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="./pages/about.html"
+                class="text-tertiary-300 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                About
+              </a>
+            </div>
+            <div>
+              <a
+                href="./pages/services.html"
+                class="text-tertiary-300 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                Services
+              </a>
+            </div>
+            <div>
+              <a
+                href="./pages/doctors.html"
+                class="text-tertiary-300 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                Doctors
+              </a>
+            </div>
+            <div>
+              <div class="relative group">
+                <button class="flex items-center group cursor-pointer">
+                  <p
+                    class="text-tertiary-300 text-sm lg:text-base lg:group-hover:text-primary-400 transition-all duration-200"
+                  >
+                    Blog
+                  </p>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    class="text-tertiary-300 text-lg transition-all duration-200 lg:group-hover:text-primary-400"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+
+                <div
+                  class="invisible group-hover:visible absolute left-0 top-6 pt-4 hidden lg:block"
+                >
+                  <div
+                    class="shadow-[0px_18px_30px_0px_rgba(112,128,176,0.2)] rounded bg-white px-3 pt-3 pb-6 space-y-2 w-max min-w-[150px]"
+                  >
+                    <a href="./pages/blog-grid.html">
+                      <p
+                        class="px-2.5 py-1 rounded block text-sm lg:text-base hover:text-primary-400 text-tertiary-300"
+                      >
+                        Blog Grid
+                      </p>
+                    </a>
+                    <a href="./pages/blog-list.html">
+                      <p
+                        class="px-2.5 py-1 rounded block text-sm lg:text-base hover:text-primary-400 text-tertiary-300"
+                      >
+                        Blog List
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="bg-tertiary-10 rounded mt-1 px-4 py-2 flex flex-col gap-1 lg:hidden"
+                >
+                  <a href="./pages/blog-grid.html">
+                    <p class="text-sm lg:text-base text-tertiary-300">
+                      Blog Grid
+                    </p> </a
+                  ><a href="./pages/blog-list.html">
+                    <p class="text-sm lg:text-base text-tertiary-300">
+                      Blog List
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a
+                href="./pages/contact.html"
+                class="text-tertiary-300 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                Contact
+              </a>
+            </div>
+            <div class="hidden lg:block">
+              <a href="./pages/appointment.html">
+                <button
+                  class="z-10 relative overflow-hidden btn-slide-secondary px-2.5 lg:px-7 py-[6px] lg:py-2.5 rounded-sm md:rounded xl:rounded-lg text-white text-[8px] md:text-xs xl:text-base transition-all duration-300"
+                >
+                  Appointment
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- home banner section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="4000"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="py-6 md:py-10 xl:py-16 relative"
+    >
+      <svg
+        viewBox="0 0 419 187"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="z-10 absolute top-1 md:top-6 lg:top-4 xl:top-10 left-0 w-10 md:w-32 lg:w-52 xl:w-80 2xl:w-[416px]"
+      >
+        <path
+          d="M417.5 184.54L365.5 150.54C255.5 84.5405 300.064 -39.5031 332.612 15.8518C373 84.5405 287.83 110.385 201 103.307C168.341 100.644 136.519 81.5572 107.5 84.5405C61.9298 89.2252 24.7031 124.382 2 139.645"
+          stroke="#0084E8"
+          stroke-width="4"
+        />
+      </svg>
+
+      <div class="container grid grid-cols-12 items-center gap-6">
+        <div class="z-20 col-span-12 md:col-span-7">
+          <p
+            class="bg-primary-600 text-white text-xxs xxs:text-xs md:text-sm xl:text-base rounded-xl xl:rounded-[30px] px-2 xxs:px-3 xl:px-4 py-1 md:py-1.5 xl:py-2.5 mb-2 w-max"
+          >
+            Solutions for Health Care
+          </p>
+          <h1
+            class="text-primary-600 font-bold text-2xl lg:text-3xl xl:text-5xl 2xl:text-[64px] lg:leading-10 xl:leading-[60px] 2xl:leading-[96px]"
+          >
+            Making Health Care
+          </h1>
+          <p
+            class="text-primary-500 md:text-lg lg:text-xl xl:text-3xl 2xl:text-5xl"
+          >
+            Better Together
+          </p>
+          <p
+            class="text-tertiary-600 text-xs lg:text-sm xl:text-lg mt-2 xl:mt-4 w-11/12"
+          >
+            We at Medicare are always fully focused on helping your to overcame
+            any surgeon procedure with great commitment and easy recovery.
+          </p>
+          <div class="mt-3 md:mt-5 xl:mt-8 flex gap-3 xl:gap-6">
+            <a href="/appointment">
+              <button
+                class="btn-zoom-primary relative text-white hover:text-primary-600 bg-primary-600 hover:bg-transparent text-xxs xxs:text-xs lg:text-sm xl:text-base rounded xl:rounded-lg px-2 xxs:px-3 xl:px-4 py-1 md:py-1.5 xl:py-2.5 mb-2 transition-all duration-500"
+              >
+                Appointment
+              </button>
+            </a>
+            <a href="/doctors">
+              <button
+                class="relative overflow-hidden btn-slide-outline-primary border border-primary-600 text-primary-600 hover:text-white text-xxs xxs:text-xs lg:text-sm xl:text-base rounded xl:rounded-lg px-2 xxs:px-3 xl:px-4 py-1 md:py-1.5 xl:py-2.5 mb-2 transition-all duration-500"
+              >
+                View Doctors
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-5">
+          <img
+            src="../assets/images/home/home_banner.png"
+            alt="home banner"
+            class="w-full mx-auto max-h-[220px] md:max-h-[596px] max-w-[526px] object-contain animate-img"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- home banner section end -->
+
+    <!-- counting summary section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 lg:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <div
+        class="bg-primary-600 text-white text-center px-10 py-6 md:py-10 lg:py-12 xl:py-16 rounded-md lg:rounded-xl xl:rounded-2xl flex flex-wrap justify-around gap-y-7"
+      >
+        <div class="xxs:min-w-[120px]">
+          <h2
+            class="font-bold text-white text-xl md:text-2xl lg:text-4xl xl:text-[40px] mb-2 xl:leading-[52px]"
+          >
+            <span class="count" data-stop="4132"></span>+
+          </h2>
+          <p class="font-semibold text-xxs md:text-sm lg:text-lg xl:text-xl">
+            Happy Patients
+          </p>
+        </div>
+        <div class="xxs:min-w-[120px]">
+          <h2
+            class="font-bold text-white text-xl md:text-2xl lg:text-4xl xl:text-[40px] mb-2 xl:leading-[52px]"
+          >
+            <span class="count" data-stop="24"></span>+
+          </h2>
+          <p class="font-semibold text-xxs md:text-sm lg:text-lg xl:text-xl">
+            Years Experience
+          </p>
+        </div>
+        <div class="xxs:min-w-[120px]">
+          <h2
+            class="font-bold text-white text-xl md:text-2xl lg:text-4xl xl:text-[40px] mb-2 xl:leading-[52px]"
+          >
+            <span class="count" data-stop="1530"></span>+
+          </h2>
+          <p class="font-semibold text-xxs md:text-sm lg:text-lg xl:text-xl">
+            Doctor &amp; Staff
+          </p>
+        </div>
+        <div class="xxs:min-w-[120px]">
+          <h2
+            class="font-bold text-white text-xl md:text-2xl lg:text-4xl xl:text-[40px] mb-2 xl:leading-[52px]"
+          >
+            <span class="count" data-stop="150"></span>+
+          </h2>
+          <p class="font-semibold text-xxs md:text-sm lg:text-lg xl:text-xl">
+            Hospital Room
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- counting summary section end -->
+
+    <!-- services section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 lg:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <p
+        class="text-primary-600 text-xs lg:text-sm xl:text-base font-semibold lg:font-bold tracking-widest text-center"
+      >
+        Services
+      </p>
+      <h2
+        class="text-tertiary-500 font-bold text-2xl lg:text-3xl xl:text-[40px] lg:leading-10 xl:leading-[60px] text-center"
+      >
+        Our Most Services
+      </h2>
+      <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mt-6 xl:mt-10">
+        <div
+          class="text-center rounded-[20px] border border-primary-100 px-4 py-5 cursor-pointer hover:-translate-y-2 hover:shadow-[0px_0px_20px_15px_#F0F2F7] transition-all duration-500"
+        >
+          <img
+            src="../assets/images/home/services/appointment.svg"
+            alt="service logo"
+            class="h-16 xl:h-20 w-16 xl:w-20 mx-auto"
+          />
+          <p
+            class="text-primary-800 font-semibold md:text-lg xl:text-xl mt-4 mb-2"
+          >
+            Doctor Appointment
+          </p>
+          <p class="text-tertiary-300 text-xs xl:text-sm">
+            Day in and day out Nursing and Medial Services gives custom-made
+            care to individuals in their cabin who are attempting to oversee all
+            alone.
+          </p>
+        </div>
+        <div
+          class="text-center rounded-[20px] border border-primary-100 px-4 py-5 cursor-pointer hover:-translate-y-2 hover:shadow-[0px_0px_20px_15px_#F0F2F7] transition-all duration-500"
+        >
+          <img
+            src="../assets/images/home/services/checkup.svg"
+            alt="service logo"
+            class="h-16 xl:h-20 w-16 xl:w-20 mx-auto"
+          />
+          <p
+            class="text-primary-800 font-semibold md:text-lg xl:text-xl mt-4 mb-2"
+          >
+            Health Checkup
+          </p>
+          <p class="text-tertiary-300 text-xs xl:text-sm">
+            Day in and day out Nursing and Medial Services gives custom-made
+            care to individuals in their cabin who are attempting to oversee all
+            alone.
+          </p>
+        </div>
+        <div
+          class="text-center rounded-[20px] border border-primary-100 px-4 py-5 cursor-pointer hover:-translate-y-2 hover:shadow-[0px_0px_20px_15px_#F0F2F7] transition-all duration-500"
+        >
+          <img
+            src="../assets/images/home/services/pharmacy.svg"
+            alt="service logo"
+            class="h-16 xl:h-20 w-16 xl:w-20 mx-auto"
+          />
+          <p
+            class="text-primary-800 font-semibold md:text-lg xl:text-xl mt-4 mb-2"
+          >
+            Online Pharmacy
+          </p>
+          <p class="text-tertiary-300 text-xs xl:text-sm">
+            Day in and day out Nursing and Medial Services gives custom-made
+            care to individuals in their cabin who are attempting to oversee all
+            alone.
+          </p>
+        </div>
+        <div
+          class="text-center rounded-[20px] border border-primary-100 px-4 py-5 cursor-pointer hover:-translate-y-2 hover:shadow-[0px_0px_20px_15px_#F0F2F7] transition-all duration-500"
+        >
+          <img
+            src="../assets/images/home/services/ambulance.svg"
+            alt="service logo"
+            class="h-16 xl:h-20 w-16 xl:w-20 mx-auto"
+          />
+          <p
+            class="text-primary-800 font-semibold md:text-lg xl:text-xl mt-4 mb-2"
+          >
+            Ambulance Service
+          </p>
+          <p class="text-tertiary-300 text-xs xl:text-sm">
+            Day in and day out Nursing and Medial Services gives custom-made
+            care to individuals in their cabin who are attempting to oversee all
+            alone.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- services section end -->
+
+    <!-- about us section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 md:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <div class="grid md:grid-cols-2 items-center gap-6">
+        <div class="lg:w-4/5">
+          <p
+            class="text-primary-600 text-xs lg:text-sm xl:text-base font-semibold lg:font-bold tracking-widest undefined"
+          >
+            About Us
+          </p>
+          <h2
+            class="text-tertiary-500 font-bold text-2xl lg:text-3xl xl:text-[40px] lg:leading-10 xl:leading-[60px] undefined"
+          >
+            We are the best to take care of you
+          </h2>
+          <p
+            class="text-tertiary-500 text-xs lg:text-sm xl:text-base mt-3 md:mt-4 xl:mt-6"
+          >
+            Aenean facilisis sodales est neciMorbi vitapurus on Est facilisisro
+            convallis commodo velante, tiam ltricies lputate. Aenean facilisis
+            sodales est neciMorbi vitapurus on Est facilisisro convallis commodo
+            velante, tiam ltricies lputate. Aenean facilisis sodales est
+            neciMorbi vitapurus on Est facilisisro convallis commodo velante,
+            tiam ltricies lputate
+          </p>
+        </div>
+        <img
+          src="../assets/images/home/about_us.webp"
+          alt="about us section"
+          class="max-h-[596px]"
+        />
+      </div>
+    </div>
+    <!-- about us section end -->
+
+    <!-- doctors connection section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 md:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <div class="grid md:grid-cols-12 items-center gap-6">
+        <div class="md:col-span-5 order-1 md:order-2">
+          <div class="flex -space-x-1.5 xl:-space-x-2.5 mb-2 xl:mb-3">
+            <p
+              class="h-6 xl:h-11 w-6 xl:w-11 text-xs xl:text-xl font-lato text-tertiary-500 font-bold rounded-full flex justify-center items-center bg-primary-200"
+            >
+              A
+            </p>
+            <p
+              class="h-6 xl:h-11 w-6 xl:w-11 text-xs xl:text-xl font-lato text-tertiary-500 font-bold rounded-full flex justify-center items-center bg-primary-100"
+            >
+              B
+            </p>
+            <p
+              class="h-6 xl:h-11 w-6 xl:w-11 text-xs xl:text-xl font-lato text-tertiary-500 font-bold rounded-full flex justify-center items-center bg-primary-100"
+            >
+              C
+            </p>
+            <p
+              class="h-6 xl:h-11 w-6 xl:w-11 text-xs xl:text-xl font-lato text-tertiary-500 font-bold rounded-full flex justify-center items-center bg-primary-200"
+            >
+              +
+            </p>
+          </div>
+          <h2
+            class="text-tertiary-500 font-bold text-2xl lg:text-3xl xl:text-[40px] lg:leading-10 xl:leading-[60px] undefined"
+          >
+            Over 500+ Doctors Connected With Medicare
+          </h2>
+          <p
+            class="text-tertiary-500 text-xs lg:text-sm xl:text-base mt-3 md:mt-4 xl:mt-6"
+          >
+            Aenean facilisis sodales est neciMorbi vitapurus on Est facilisisro
+            convallis commodo velante, tiam ltricies lputate. Aenean facilisis
+            sodales est neciMorbi vitapurus on Est facilisisro convallis commodo
+            velante, tiam ltricies lputate. Aenean facilisis sodales est
+            neciMorbi vitapurus on Est facilisisro convallis commodo velante,
+            tiam ltricies lputate
+          </p>
+          <a href="./pages/doctors.html"
+            ><button
+              class="relative overflow-hidden btn-slide-outline-primary text-primary-600 hover:text-white text-xxxs xxs:text-xs xl:text-base font-medium border border-primary-600 rounded-[10px] px-3 xl:px-4 py-1.5 xl:py-3 mt-4 xl:mt-8 transition-all duration-500"
+            >
+              See All Doctors
+            </button></a
+          >
+        </div>
+        <img
+          src="../assets/images/home/connections.webp"
+          alt="doctors connection section"
+          class="md:col-span-7 max-h-[580px] order-2 md:order-1"
+        />
+      </div>
+    </div>
+    <!-- doctors connection section end -->
+
+    <!-- process section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 md:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <div class="grid md:grid-cols-2 items-center gap-6">
+        <div class="lg:w-4/5">
+          <p
+            class="text-primary-600 text-xs lg:text-sm xl:text-base font-semibold lg:font-bold tracking-widest undefined"
+          >
+            Process
+          </p>
+          <h2
+            class="text-tertiary-500 font-bold text-2xl lg:text-3xl xl:text-[40px] lg:leading-10 xl:leading-[60px] undefined"
+          >
+            Working Process
+          </h2>
+          <p
+            class="text-tertiary-500 text-xs lg:text-sm xl:text-base mb-4 xl:mb-10"
+          >
+            Why Medicare services is best all time since 1990. desires to obtain
+            of itself, because it is pain, but occasionally circumstance procure
+            him some great.
+          </p>
+          <div class="ml-2 xl:ml-6 space-y-4 xl:space-y-10">
+            <div class="flex gap-2 xl:gap-4">
+              <img
+                src="./assets/images/icons/workingProcess.svg"
+                alt="icon"
+                class="h-7 md:h-10 xl:h-16 w-7 md:w-10 xl:w-16"
+              />
+              <div>
+                <p
+                  class="text-tertiary-500 font-semibold text-xs xl:text-xl mb-2"
+                >
+                  1. Registration
+                </p>
+                <p class="text-tertiary-400 font-medium text-xxs xl:text-sm">
+                  Day in and day out Nursing and Medial Services gives
+                  custom-made care to
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 xl:gap-4">
+              <img
+                src="./assets/images/icons/workingProcess.svg"
+                alt="icon"
+                class="h-7 md:h-10 xl:h-16 w-7 md:w-10 xl:w-16"
+              />
+              <div>
+                <p
+                  class="text-tertiary-500 font-semibold text-xs xl:text-xl mb-2"
+                >
+                  2. Appointment
+                </p>
+                <p class="text-tertiary-400 font-medium text-xxs xl:text-sm">
+                  Day in and day out Nursing and Medial Services gives
+                  custom-made care to
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 xl:gap-4">
+              <img
+                src="./assets/images/icons/workingProcess.svg"
+                alt="icon"
+                class="h-7 md:h-10 xl:h-16 w-7 md:w-10 xl:w-16"
+              />
+              <div>
+                <p
+                  class="text-tertiary-500 font-semibold text-xs xl:text-xl mb-2"
+                >
+                  3. Take Treatment
+                </p>
+                <p class="text-tertiary-400 font-medium text-xxs xl:text-sm">
+                  Day in and day out Nursing and Medial Services gives
+                  custom-made care to
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative rounded-xl xl:rounded-[20px] overflow-hidden cursor-pointer group"
+        >
+          <img
+            src="./assets/images/home/working_process.webp"
+            alt="working process section"
+            class="max-h-[553px]"
+          />
+          <div
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalCenter"
+            class="absolute top-[55%] left-[65%] -translate-x-[65%] -translate-y-[55%]"
+          >
+            <div
+              class="bg-[#E6F0FF] h-9 lg:h-14 xl:h-20 w-9 lg:w-14 xl:w-20 relative rounded-full flex justify-center items-center"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="text-[#0047B3] lg:text-2xl xl:text-4xl z-10 ml-1 xl:ml-1.5"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.78 2L3 2.41v12l.78.42 9-6V8l-9-6zM4 13.48V3.35l7.6 5.07L4 13.48z"
+                ></path></svg
+              ><span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E6F0FF] opacity-75"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- process section end -->
+
+    <!-- modal start -->
+    <div
+      class="modal fade fixed top-1/2 -translate-y-1/2 left-0 hidden w-full h-max outline-none overflow-x-hidden overflow-y-auto"
+      id="exampleModalCenter"
+      tabindex="-1"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg relative">
+        <div
+          class="modal-content relative w-full rounded-lg clip-video outline-none"
+        >
+          <video
+            class="w-full mx-auto h-max max-h-[350px] lg:max-h-[400px] xl:max-h-[520px] object-cover rounded-lg"
+            src="./assets/videos/dummy.mp4"
+            autoplay
+            controls
+            loop
+          />
+          <i
+            class="ph-x text-2xl text-red-700 bg-white/40 hover:bg-white rounded-full cursor-pointer h-10 w-10 absolute top-3 left-3 transition-all duration-300"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+    <!-- <i
+    class="ph-x text-2xl text-red-700 bg-white/40 hover:bg-white rounded-full cursor-pointer transition-all duration-300"
+  ></i> -->
+
+    <!-- testimonial section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 lg:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <p
+        class="text-primary-500 text-xs lg:text-sm xl:text-base font-semibold lg:font-bold tracking-widest text-center"
+      >
+        Testimonials
+      </p>
+      <h2
+        class="text-tertiary-500 font-bold text-2xl lg:text-3xl xl:text-[40px] lg:leading-10 xl:leading-[60px] text-center"
+      >
+        What our patient say”
+      </h2>
+      <p class="text-xs lg:text-sm xl:text-base text-center">
+        Best medical &amp; health services provider
+      </p>
+      <img
+        src="./assets/images/testimonial/testimonial_map.png"
+        alt="testimonial map"
+        class="my-6 w-full max-w-[568px] mx-auto"
+      />
+      <div class="grid grid-cols-12 md:gap-6 items-center testimonial-slider">
+        <div class="p-2 cursor-pointer group swiper-btn-prev">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            class="slidePrev-btn xl:text-xl text-tertiary-100 group-hover:text-primary-600 mb-10"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+            ></path>
+          </svg>
+        </div>
+        <div class="col-span-10">
+          <div class="swiper swiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="grid grid-cols-10 space-y-2 mb-10">
+                  <div
+                    class="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4"
+                  >
+                    <img
+                      src="./assets/images/testimonial/user.png"
+                      alt="testimonial"
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div>
+                      <p
+                        class="text-xxxs xxs:text-xxs lg:text-base xl:text-xl font-lato italic text-primary-700 font-bold"
+                      >
+                        Kawser Ahmed
+                      </p>
+                      <p
+                        class="text-xxxs xxs:text-xxs xl:text-xs font-lato italic text-tertiary-500"
+                      >
+                        Dhaka, Bangladesh
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600"
+                  >
+                    “Was here this past weekend and the staff was great I really
+                    do appreciate this hospital staff nurses and doctors where
+                    great and I had some delicious pasta! great hospital.”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid grid-cols-10 space-y-2 mb-10">
+                  <div
+                    class="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4"
+                  >
+                    <img
+                      src="./assets/images/testimonial/user.png"
+                      alt="testimonial"
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div>
+                      <p
+                        class="text-xxxs xxs:text-xxs lg:text-base xl:text-xl font-lato italic text-primary-700 font-bold"
+                      >
+                        Jack Sainterg
+                      </p>
+                      <p
+                        class="text-xxxs xxs:text-xxs xl:text-xs font-lato italic text-tertiary-500"
+                      >
+                        United Kingdom, UK
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600"
+                  >
+                    “Was here this past weekend and the staff was great I really
+                    do appreciate this hospital staff nurses and doctors where
+                    great and I had some delicious pasta! great hospital.”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid grid-cols-10 space-y-2 mb-10">
+                  <div
+                    class="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4"
+                  >
+                    <img
+                      src="./assets/images/testimonial/user.png"
+                      alt="testimonial"
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div>
+                      <p
+                        class="text-xxxs xxs:text-xxs lg:text-base xl:text-xl font-lato italic text-primary-700 font-bold"
+                      >
+                        John Doe
+                      </p>
+                      <p
+                        class="text-xxxs xxs:text-xxs xl:text-xs font-lato italic text-tertiary-500"
+                      >
+                        United States, USA
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600"
+                  >
+                    “Was here this past weekend and the staff was great I really
+                    do appreciate this hospital staff nurses and doctors where
+                    great and I had some delicious pasta! great hospital.”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid grid-cols-10 space-y-2 mb-10">
+                  <div
+                    class="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4"
+                  >
+                    <img
+                      src="./assets/images/testimonial/user.png"
+                      alt="testimonial"
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div>
+                      <p
+                        class="text-xxxs xxs:text-xxs lg:text-base xl:text-xl font-lato italic text-primary-700 font-bold"
+                      >
+                        Peter Dinklage
+                      </p>
+                      <p
+                        class="text-xxxs xxs:text-xxs xl:text-xs font-lato italic text-tertiary-500"
+                      >
+                        United Kingdom, UK
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600"
+                  >
+                    “Was here this past weekend and the staff was great I really
+                    do appreciate this hospital staff nurses and doctors where
+                    great and I had some delicious pasta! great hospital.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="p-2 cursor-pointer group swiper-btn-next">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            class="slideNext-btn xl:text-xl text-tertiary-100 group-hover:text-primary-600 md:ml-auto mb-10"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- testimonial section end -->
+
+    <!-- blogs section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 md:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <p
+        class="text-primary-600 text-xs lg:text-sm xl:text-base font-semibold lg:font-bold tracking-widest text-center"
+      >
+        Blogs
+      </p>
+      <h2
+        class="text-tertiary-500 font-bold text-2xl lg:text-3xl xl:text-[40px] lg:leading-10 xl:leading-[60px] text-center"
+      >
+        News &amp; updates
+      </h2>
+      <div
+        class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-6 mt-6 xl:mt-10"
+      >
+        <div
+          class="rounded-2xl overflow-hidden group shadow-[0px_8px_16px_0px_rgba(145,158,171,0.16)]"
+        >
+          <div class="h-[200px] 2xl:h-[295px] relative overflow-hidden">
+            <img
+              src="./assets/images/blog/blogs/0.png"
+              alt="blog"
+              class="h-full w-full object-cover scale-[101%] group-hover:scale-105 transition-all duration-1000"
+            />
+            <p
+              class="absolute bottom-5 left-4 bg-primary-600 text-white font-medium text-xs xl:text-sm rounded-sm xl:rounded px-2 xl:px-4 py-1 xl:py-2"
+            >
+              October 05, 2022
+            </p>
+          </div>
+          <div class="p-4 pb-6">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-1 xl:gap-2">
+                <img
+                  src="./assets/images/blog/blogs/author.png"
+                  alt="author"
+                  class="h-4 2xl:h-6 w-4 2xl:w-6"
+                />
+                <p
+                  class="w-full text-tertiary-500 font-medium text-xxs 2xl:text-sm"
+                >
+                  Dr. Patrick Soon
+                </p>
+              </div>
+              <div class="flex items-center gap-1 xl:gap-2">
+                <img
+                  src="./assets/images/icons/blog/chat.svg"
+                  alt="comments"
+                  class="h-4 2xl:h-6 w-4 2xl:w-6"
+                />
+                <p
+                  class="w-full text-tertiary-500 font-medium text-xxs 2xl:text-sm"
+                >
+                  4 Comments
+                </p>
+              </div>
+              <div class="flex items-center gap-1 xl:gap-2">
+                <img
+                  src="./assets/images/icons/blog/heart.svg"
+                  alt="likes"
+                  class="h-4 2xl:h-6 w-4 2xl:w-6"
+                />
+                <p
+                  class="w-full text-tertiary-500 font-medium text-xxs 2xl:text-sm"
+                >
+                  20 Likes
+                </p>
+              </div>
+            </div>
+            <p class="text-tertiary-600 font-semibold 2xl:text-xl mt-3">
+              Is Running Good for the Heart ?
+            </p>
+            <p
+              class="text-tertiary-400 text-xs 2xl:text-sm mt-1.5 mb-4 xl:mb-6"
+            >
+              Lorem ipsum dolor sit amet, consectetuer. Proin nibh vel velit
+              auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+              nisi elit co...
+            </p>
+            <a href="./pages/single-blog.html"
+              ><div
+                class="w-max border border-primary-600 text-primary-600 px-6 rounded-lg py-2 font-medium text-xs 2xl:text-base flex items-center justify-center"
+              >
+                <div class="flex items-center gap-1">
+                  <span>Read More</span
+                  ><svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    ></path>
+                  </svg>
+                </div></div
+            ></a>
+          </div>
+        </div>
+        <div
+          class="rounded-2xl overflow-hidden group shadow-[0px_8px_16px_0px_rgba(145,158,171,0.16)]"
+        >
+          <div class="h-[200px] 2xl:h-[295px] relative overflow-hidden">
+            <img
+              src="./assets/images/blog/blogs/1.png"
+              alt="blog"
+              class="h-full w-full object-cover scale-[101%] group-hover:scale-105 transition-all duration-1000"
+            />
+            <p
+              class="absolute bottom-5 left-4 bg-primary-600 text-white font-medium text-xs xl:text-sm rounded-sm xl:rounded px-2 xl:px-4 py-1 xl:py-2"
+            >
+              August 20, 2022
+            </p>
+          </div>
+          <div class="p-4 pb-6">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-1 xl:gap-2">
+                <img
+                  src="./assets/images/blog/blogs/author.png"
+                  alt="author"
+                  class="h-4 2xl:h-6 w-4 2xl:w-6"
+                />
+                <p
+                  class="w-full text-tertiary-500 font-medium text-xxs 2xl:text-sm"
+                >
+                  Dr. Khalid Abbed
+                </p>
+              </div>
+              <div class="flex items-center gap-1 xl:gap-2">
+                <img
+                  src="./assets/images/icons/blog/chat.svg"
+                  alt="comments"
+                  class="h-4 2xl:h-6 w-4 2xl:w-6"
+                />
+                <p
+                  class="w-full text-tertiary-500 font-medium text-xxs 2xl:text-sm"
+                >
+                  5 Comments
+                </p>
+              </div>
+              <div class="flex items-center gap-1 xl:gap-2">
+                <img
+                  src="./assets/images/icons/blog/heart.svg"
+                  alt="likes"
+                  class="h-4 2xl:h-6 w-4 2xl:w-6"
+                />
+                <p
+                  class="w-full text-tertiary-500 font-medium text-xxs 2xl:text-sm"
+                >
+                  14 Likes
+                </p>
+              </div>
+            </div>
+            <p class="text-tertiary-600 font-semibold 2xl:text-xl mt-3">
+              How to Deal With Back Pain
+            </p>
+            <p
+              class="text-tertiary-400 text-xs 2xl:text-sm mt-1.5 mb-4 xl:mb-6"
+            >
+              Lorem ipsum dolor sit amet, consectetuer. Proin nibh vel velit
+              auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+              nisi elit co...
+            </p>
+            <a href="./pages/single-blog.html"
+              ><div
+                class="w-max border border-primary-600 text-primary-600 px-6 rounded-lg py-2 font-medium text-xs 2xl:text-base flex items-center justify-center"
+              >
+                <div class="flex items-center gap-1">
+                  <span>Read More</span
+                  ><svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    ></path>
+                  </svg>
+                </div></div
+            ></a>
+          </div>
+        </div>
+        <div
+          class="rounded-2xl overflow-hidden group shadow-[0px_8px_16px_0px_rgba(145,158,171,0.16)]"
+        >
+          <div class="h-[200px] 2xl:h-[295px] relative overflow-hidden">
+            <img
+              src="./assets/images/blog/blogs/2.png"
+              alt="blog"
+              class="h-full w-full object-cover scale-[101%] group-hover:scale-105 transition-all duration-1000"
+            />
+            <p
+              class="absolute bottom-5 left-4 bg-primary-600 text-white font-medium text-xs xl:text-sm rounded-sm xl:rounded px-2 xl:px-4 py-1 xl:py-2"
+            >
+              September 10, 2022
+            </p>
+          </div>
+          <div class="p-4 pb-6">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-1 xl:gap-2">
+                <img
+                  src="./assets/images/blog/blogs/author.png"
+                  alt="author"
+                  class="h-4 2xl:h-6 w-4 2xl:w-6"
+                />
+                <p
+                  class="w-full text-tertiary-500 font-medium text-xxs 2xl:text-sm"
+                >
+                  Dr. William A. Abdu
+                </p>
+              </div>
+              <div class="flex items-center gap-1 xl:gap-2">
+                <img
+                  src="./assets/images/icons/blog/chat.svg"
+                  alt="comments"
+                  class="h-4 2xl:h-6 w-4 2xl:w-6"
+                />
+                <p
+                  class="w-full text-tertiary-500 font-medium text-xxs 2xl:text-sm"
+                >
+                  4 Comments
+                </p>
+              </div>
+              <div class="flex items-center gap-1 xl:gap-2">
+                <img
+                  src="./assets/images/icons/blog/heart.svg"
+                  alt="likes"
+                  class="h-4 2xl:h-6 w-4 2xl:w-6"
+                />
+                <p
+                  class="w-full text-tertiary-500 font-medium text-xxs 2xl:text-sm"
+                >
+                  18 Likes
+                </p>
+              </div>
+            </div>
+            <p class="text-tertiary-600 font-semibold 2xl:text-xl mt-3">
+              Integrative Medicine Treatment
+            </p>
+            <p
+              class="text-tertiary-400 text-xs 2xl:text-sm mt-1.5 mb-4 xl:mb-6"
+            >
+              Lorem ipsum dolor sit amet, consectetuer. Proin nibh vel velit
+              auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+              nisi elit co...
+            </p>
+            <a href="./pages/single-blog.html"
+              ><div
+                class="w-max border border-primary-600 text-primary-600 px-6 rounded-lg py-2 font-medium text-xs 2xl:text-base flex items-center justify-center"
+              >
+                <div class="flex items-center gap-1">
+                  <span>Read More</span
+                  ><svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    ></path>
+                  </svg>
+                </div></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- blogs section end -->
+
+    <!-- contact us section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 md:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <div
+        class="grid md:grid-cols-2 items-center gap-6 p-6 xl:p-10 border rounded-[10px]"
+      >
+        <div class="text-center">
+          <img
+            src="./assets/images/icons/phoneIcon.svg"
+            alt="phone icon"
+            class="h-16 lg:h-24 xl:h-36 2xl:h-40 w-16 lg:w-24 xl:w-36 2xl:w-40 mx-auto animate-pulse"
+          />
+          <p
+            class="text-tertiary-600 font-semibold md:text-lg 2xl:text-2xl mt-4"
+          >
+            HOTLINE NUMBER
+          </p>
+          <p
+            class="text-tertiary-600 font-semibold text-2xl md:text-3xl 2xl:text-[40px] xl:leading-[60px]"
+          >
+            +95552 88559
+          </p>
+          <p
+            class="text-tertiary-500 text-xs xl:text-sm mt-4 max-w-[474px] mx-auto"
+          >
+            “Was here this past weekend and the staff was great I really do
+            appreciate this hospital staff nurses and doctors where great and
+          </p>
+        </div>
+        <div>
+          <p class="text-tertiary-500 font-semibold md:text-lg xl:text-2xl">
+            Get Consultation <span class="text-primary-600">Today!</span>
+          </p>
+          <form class="mt-6 space-y-4">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2 md:p-4 text-xs lg:text-sm xl:text-base outline-0 transition-all duration-300"
+              value=""
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2 md:p-4 text-xs lg:text-sm xl:text-base outline-0 transition-all duration-300"
+              value=""
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              class="w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2 md:p-4 text-xs lg:text-sm xl:text-base outline-0 transition-all duration-300"
+              value=""
+            />
+            <textarea
+              type="text"
+              rows="5"
+              placeholder="Write Message here.."
+              class="w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2 md:p-4 text-xs lg:text-sm xl:text-base outline-0 resize-none transition-all duration-300"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="z-10 relative overflow-hidden btn-slide-secondary px-6 py-2 rounded-lg text-white text-xs md:text-sm xl:text-base shadow-[0px_8px_16px_0px_rgba(145,158,171,0.16)]"
+            >
+              Get In Touch
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- contact us section end -->
+
+    <!-- logo slider start -->
+    <div class="bg-tertiary-10 py-6 xl:py-10 serviceSlider">
+      <div class="container">
+        <div class="swiper swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="./assets/images/services/slider_images/service_image_1.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="./assets/images/services/slider_images/service_image_2.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="./assets/images/services/slider_images/service_image_3.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="./assets/images/services/slider_images/service_image_1.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="./assets/images/services/slider_images/service_image_2.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="./assets/images/services/slider_images/service_image_3.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="./assets/images/services/slider_images/service_image_1.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="./assets/images/services/slider_images/service_image_2.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="./assets/images/services/slider_images/service_image_3.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- logo slider end -->
+
+    <!-- footer start -->
+    <div class="text-white bg-primary-700">
+      <div class="container">
+        <a href="./index.html"
+          ><img
+            src="./assets/images/logo/logoLight.svg"
+            alt="logo"
+            class="w-max mx-auto py-6"
+        /></a>
+        <div class="flex flex-col md:flex-row justify-around text-center">
+          <div class="w-full border-t border-b">
+            <div class="py-6 md:py-2 lg:py-5 md:my-5 false">
+              <p class="font-semibold lg:text-lg xl:text-2xl mb-2">
+                Office Address
+              </p>
+              <p class="text-xs lg:text-sm xl:text-base">
+                Kalachadpur (North Baridhara),
+              </p>
+              <p class="text-xs lg:text-sm xl:text-base">
+                Gulshan, Dhaka 1212, Bangladesh.
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:border-t md:border-b">
+            <div class="py-6 md:py-2 lg:py-5 md:my-5 md:border-l md:border-r">
+              <p class="font-semibold lg:text-lg xl:text-2xl mb-2">
+                Talk to expert
+              </p>
+              <p class="text-xs lg:text-sm xl:text-base">+9600 0012 4521</p>
+              <p class="text-xs lg:text-sm xl:text-base">+2500 0012 4522</p>
+            </div>
+          </div>
+          <div class="w-full border-t border-b">
+            <div class="py-6 md:py-2 lg:py-5 md:my-5 false">
+              <p class="font-semibold lg:text-lg xl:text-2xl mb-2">Email Us</p>
+              <p class="text-xs lg:text-sm xl:text-base">info@medicare.com</p>
+              <p class="text-xs lg:text-sm xl:text-base">
+                Example@medicare.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="py-10 grid grid-cols-12 gap-6">
+          <div
+            class="col-span-12 md:col-span-7 xl:col-span-8 flex flex-col md:flex-row justify-around lg:justify-evenly gap-6"
+          >
+            <div>
+              <p
+                class="font-semibold lg:text-lg xl:text-2xl mb-2 text-center md:text-start"
+              >
+                Quick Links
+              </p>
+              <div class="space-y-2">
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./index.html"
+                  >Home</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./pages/about.html"
+                  >About Us</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./pages/services.html"
+                  >Services</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./pages/blog-grid.html"
+                  >Blog Grid</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./pages/blog-list.html"
+                  >Blog List</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./pages/contact.html"
+                  >Contact</a
+                >
+              </div>
+            </div>
+            <div>
+              <p
+                class="font-semibold lg:text-lg xl:text-2xl mb-2 text-center md:text-start"
+              >
+                Services
+              </p>
+              <div class="space-y-2">
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./pages/services.html"
+                  >Health Check</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./pages/services.html"
+                  >Doctor Appointment</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./pages/services.html"
+                  >Online Pharmacy</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./pages/services.html"
+                  >Abmulace Service</a
+                >
+              </div>
+            </div>
+            <div>
+              <p
+                class="font-semibold lg:text-lg xl:text-2xl mb-2 text-center md:text-start"
+              >
+                Open Hours
+              </p>
+              <div class="space-y-2">
+                <p
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                >
+                  Open at 09: 00 AM
+                </p>
+                <p
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                >
+                  Close at 11.00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-12 md:col-span-5 xl:col-span-4 w-max mx-auto md:mx-0 space-y-2 text-center md:text-start"
+          >
+            <form class="flex items-center gap-3">
+              <input
+                type="email"
+                placeholder="Enter your email adderss"
+                class="bg-transparent border rounded px-3 md:px-4 py-2 placeholder-white text-xs lg:text-sm xl:text-base outline-0 focus:shadow-xl"
+              />
+              <button
+                type="submit"
+                class="px-3 lg:px-7 py-2 bg-primary-500 hover:bg-primary-600 hover:shadow-xl rounded border text-xs lg:text-sm xl:text-base transition-all duration-300"
+              >
+                Send
+              </button>
+            </form>
+            <p class="text-xs lg:text-sm">Subcribe to get updates</p>
+            <p class="font-semibold pt-4">Follow Us</p>
+            <div class="flex items-center gap-2 w-max mx-auto md:mx-0">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.linkedin.com/"
+              >
+                <img
+                  src="./assets/images/social/linkedIn.svg"
+                  alt="linkedIn logo"
+                />
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.facebook.com/"
+              >
+                <img
+                  src="./assets/images/social/facebook.svg"
+                  alt="facebook logo"
+                />
+              </a>
+              <a rel="noreferrer" target="_blank" href="https://twitter.com/">
+                <img
+                  src="./assets/images/social/twitter.svg"
+                  alt="twitter logo"
+                />
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.instagram.com/"
+              >
+                <img
+                  src="./assets/images/social/instagram.svg"
+                  alt="instagram logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        class="py-3 text-center text-xs lg:text-sm xl:text-base bg-primary-600"
+      >
+        copyright ©2022 reserved by&nbsp;<span class="xl:font-semibold"
+          >medical healthcare center</span
+        >
+      </p>
+    </div>
+    <!-- footer end -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+  </body>
+</html>

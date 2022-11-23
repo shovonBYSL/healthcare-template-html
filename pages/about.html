@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="true"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- links end -->
+    <title>About Us</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="stylesheet" href="../assets/css/buttons.css" />
+    <link rel="stylesheet" href="../assets/css/navigations.css" />
+    <link rel="stylesheet" href="../assets/css/swiperSlider.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <!-- <link rel="stylesheet" href="../dist/output.css" /> -->
+  </head>
+
+  <body>
+    <!-- preloader -->
+    <div class="loader">
+      <div
+        class="fixed left-0 top-0 bg-white z-[999] h-screen w-screen flex justify-center items-center"
+      >
+        <div class="w-3/4 sm:w-1/2 lg:w-2/5 xl:w-1/4">
+          <lottie-player
+            src="../assets/animation/loader.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+    </div>
+    <!-- preloader -->
+
+    <!-- header start -->
+    <div class="z-50 py-4 lg:py-5 bg-primary-600 text-white">
+      <div class="container">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-2"
+        >
+          <div class="flex flex-col md:flex-row items-center gap-1 lg:gap-7">
+            <div class="flex items-center gap-2">
+              <img
+                src="../assets/images/icons/map.svg"
+                alt="address"
+                class="h-4 lg:h-6"
+              />
+              <p class="text-xxs lg:text-sm font-medium">
+                New Airport Road Banani C/A, Dhaka-1213
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <img
+                src="../assets/images/icons/phone.svg"
+                alt="phone number"
+                class="h-4 lg:h-6"
+              />
+              <p class="text-xxs lg:text-sm font-medium">9600 2215 1215</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <img
+                src="../assets/images/icons/envelope.svg"
+                alt="email"
+                class="h-4 lg:h-6"
+              />
+              <p class="text-xxs lg:text-sm font-medium">info@company.com</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/"
+            >
+              <img
+                src="../assets/images/social/linkedIn.svg"
+                alt="linkedIn logo"
+                class="h-4 lg:h-6"
+              />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.facebook.com/"
+            >
+              <img
+                src="../assets/images/social/facebook.svg"
+                alt="facebook logo"
+                class="h-4 lg:h-6"
+              />
+            </a>
+            <a rel="noreferrer" target="_blank" href="https://twitter.com/">
+              <img
+                src="../assets/images/social/twitter.svg"
+                alt="twitter logo"
+                class="h-4 lg:h-6"
+              />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.instagram.com/"
+            >
+              <img
+                src="../assets/images/social/instagram.svg"
+                alt="instagram logo"
+                class="h-4 lg:h-6"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header end -->
+
+    <!-- navbar start -->
+    <header
+      class="z-50 sticky top-0 bg-white shadow-[0px_4px_15px_0px_rgba(112,128,176,0.1)] py-2 lg:py-3"
+    >
+      <nav
+        class="container flex flex-wrap lg:flex-nowrap items-center justify-between w-full transition-all duration-700 ease-in overflow-hidden lg:overflow-visible"
+      >
+        <a href="../index.html">
+          <img
+            src="../assets/images/logo/logo.svg"
+            alt="logo"
+            class="h-10 lg:h-16 w-[138px] lg:w-[200px]"
+          />
+        </a>
+        <div class="flex items-center gap-3">
+          <div class="lg:hidden mb-[2px]">
+            <a href="./appointment.html">
+              <button
+                class="z-10 relative overflow-hidden btn-slide-secondary px-2.5 lg:px-7 py-[6px] lg:py-2.5 rounded-sm md:rounded xl:rounded-lg text-white text-[8px] md:text-xs xl:text-base transition-all duration-300"
+              >
+                Appointment
+              </button>
+            </a>
+          </div>
+          <div id="menu-button" class="lg:hidden block">
+            <div class="bar-one"></div>
+            <div class="bar-two"></div>
+            <div class="bar-three"></div>
+          </div>
+        </div>
+        <div id="menu" class="w-full lg:w-auto lg:flex lg:items-center hidden">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:space-x-10 space-y-2 lg:space-y-0 p-4 lg:p-0"
+          >
+            <div>
+              <a
+                href="../index.html"
+                class="text-tertiary-300 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                Home
+              </a>
+            </div>
+            <div>
+              <a
+                href="./about.html"
+                class="text-primary-600 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                About
+                <span class="block h-[2px] w-6 bg-primary-600 rounded-xl" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="./services.html"
+                class="text-tertiary-300 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                Services
+              </a>
+            </div>
+            <div>
+              <a
+                href="./doctors.html"
+                class="text-tertiary-300 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                Doctors
+              </a>
+            </div>
+            <div>
+              <div class="relative group">
+                <button class="flex items-center group cursor-pointer">
+                  <p
+                    class="text-tertiary-300 text-sm lg:text-base lg:group-hover:text-primary-400 transition-all duration-200"
+                  >
+                    Blog
+                  </p>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    class="text-tertiary-300 text-lg transition-all duration-200 lg:group-hover:text-primary-400"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+
+                <div
+                  class="invisible group-hover:visible absolute left-0 top-6 pt-4 hidden lg:block"
+                >
+                  <div
+                    class="shadow-[0px_18px_30px_0px_rgba(112,128,176,0.2)] rounded bg-white px-3 pt-3 pb-6 space-y-2 w-max min-w-[150px]"
+                  >
+                    <a href="./blog-grid.html">
+                      <p
+                        class="px-2.5 py-1 rounded block text-sm lg:text-base hover:text-primary-400 text-tertiary-300"
+                      >
+                        Blog Grid
+                      </p>
+                    </a>
+                    <a href="./blog-list.html">
+                      <p
+                        class="px-2.5 py-1 rounded block text-sm lg:text-base hover:text-primary-400 text-tertiary-300"
+                      >
+                        Blog List
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="bg-tertiary-10 rounded mt-1 px-4 py-2 flex flex-col gap-1 lg:hidden"
+                >
+                  <a href="./blog-grid.html">
+                    <p class="text-sm lg:text-base text-tertiary-300">
+                      Blog Grid
+                    </p>
+                  </a>
+                  <a href="./blog-list.html">
+                    <p class="text-sm lg:text-base text-tertiary-300">
+                      Blog List
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a
+                href="./contact.html"
+                class="text-tertiary-300 text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200"
+              >
+                Contact
+              </a>
+            </div>
+            <div class="hidden lg:block">
+              <a href="./appointment.html">
+                <button
+                  class="z-10 relative overflow-hidden btn-slide-secondary px-2.5 lg:px-7 py-[6px] lg:py-2.5 rounded-sm md:rounded xl:rounded-lg text-white text-[8px] md:text-xs xl:text-base transition-all duration-300"
+                >
+                  Appointment
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- banner section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="bg-tertiary-10 py-6 lg:py-10 xl:py-20 2xl:h-[510px] flex justify-center items-center aos-init aos-animate"
+    >
+      <div class="container grid grid-cols-12 items-center gap-6">
+        <div class="col-span-12 md:col-span-7">
+          <h1
+            class="text-primary-600 font-bold text-2xl lg:text-3xl xl:text-5xl 2xl:text-[64px] lg:leading-10 xl:leading-[60px] 2xl:leading-[96px]"
+          >
+            About Us
+          </h1>
+          <p
+            class="text-tertiary-600 text-xs lg:text-sm xl:text-lg mt-2 xl:mt-4 w-11/12"
+          >
+            Know About Medical Health care Center
+          </p>
+        </div>
+        <div class="col-span-12 md:col-span-5">
+          <img
+            src="../assets/images/about_us/about_us_banner.png"
+            alt="banner"
+            class="w-5/6 md:w-full mx-auto max-h-[435px] object-contain animate-img"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- banner section end -->
+
+    <!-- about us section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 md:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <div class="grid lg:grid-cols-2 gap-6 xl:gap-9">
+        <div
+          class="relative rounded-xl xl:rounded-[20px] overflow-hidden cursor-pointer group"
+        >
+          <img
+            src="../assets/images/about_us/about_us.webp"
+            alt="about us section"
+            class="h-[180px] md:h-80 lg:h-full w-full object-cover max-h-[466px] scale-[101%] group-hover:scale-105 transition-all duration-1000"
+          />
+          <div
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalCenter"
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          >
+            <div
+              class="bg-white h-9 lg:h-14 xl:h-20 w-9 lg:w-14 xl:w-20 relative rounded-full flex justify-center items-center"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="text-secondary-700 lg:text-2xl xl:text-4xl z-10 ml-1 xl:ml-1.5"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.78 2L3 2.41v12l.78.42 9-6V8l-9-6zM4 13.48V3.35l7.6 5.07L4 13.48z"
+                ></path>
+              </svg>
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="text-primary-600 text-xs lg:text-sm xl:text-base font-semibold lg:font-bold tracking-widest undefined"
+          >
+            About Us
+          </p>
+          <h2
+            class="text-tertiary-500 font-bold text-2xl lg:text-3xl xl:text-[40px] lg:leading-10 xl:leading-[60px] undefined"
+          >
+            We Are The Best
+          </h2>
+          <p
+            class="text-tertiary-600 text-xs lg:text-sm xl:text-base mb-4 xl:mb-6"
+          >
+            We assured to you that we will provide responsible treatment to you.
+            It’s our duty for any patients. You are welcome to HounLare medical
+            &amp; caregiver services center.We assured to you that we will
+            provide responsible treatment to you. It’s our duty for any
+            patients. You are welcome to HounLare medical &amp; caregiver
+            services center. We assured to you that we will provide responsible
+            treatment to you. It’s our duty for any patients.
+          </p>
+          <!-- <div>
+            <div class="cursor-pointer border-b set">
+              <header class="flex justify-between items-center p-2 active">
+                <p class="text-tertiary-500 font-medium text-sm xl:text-base">
+                  Work
+                </p>
+                <i class="ph-caret-down-bold"></i>
+              </header>
+              <section class="content">
+                <div
+                  class="p-2 text-tertiary-500 text-xs lg:text-sm xl:text-base"
+                >
+                  You are welcome to HounLare medical &amp; caregiver services
+                  center.We assured to you that we will provide responsible
+                  treatment to you.
+                </div>
+              </section>
+            </div>
+            <div class="cursor-pointer border-b set">
+              <header class="flex justify-between items-center p-2">
+                <p class="text-tertiary-500 font-medium text-sm xl:text-base">
+                  Mission
+                </p>
+                <i class="ph-caret-down-bold"></i>
+              </header>
+              <section class="content">
+                <div
+                  class="p-2 text-tertiary-500 text-xs lg:text-sm xl:text-base"
+                >
+                  You are welcome to HounLare medical &amp; caregiver services
+                  center.We assured to you that we will provide responsible
+                  treatment to you.
+                </div>
+              </section>
+            </div>
+            <div class="cursor-pointer border-b set">
+              <header class="flex justify-between items-center p-2">
+                <p class="text-tertiary-500 font-medium text-sm xl:text-base">
+                  Achievement
+                </p>
+                <i class="ph-caret-down-bold"></i>
+              </header>
+              <section class="content">
+                <div
+                  class="p-2 text-tertiary-500 text-xs lg:text-sm xl:text-base"
+                >
+                  You are welcome to HounLare medical &amp; caregiver services
+                  center.We assured to you that we will provide responsible
+                  treatment to you.
+                </div>
+              </section>
+            </div>
+          </div>   -->
+          <div id="accordionExample">
+            <div class="border-b">
+              <h2 class="accordion-header mb-0" id="headingOne">
+                <button
+                  class="accordion-button relative flex items-center w-full p-2 text-tertiary-500 font-medium text-sm xl:text-base"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Work
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <p
+                  class="p-2 text-tertiary-700 text-xs lg:text-sm xl:text-base"
+                >
+                  You are welcome to HounLare medical &amp; caregiver services
+                  center.We assured to you that we will provide responsible
+                  treatment to you.
+                </p>
+              </div>
+            </div>
+            <div class="border-b">
+              <h2 class="accordion-header mb-0" id="headingTwo">
+                <button
+                  class="accordion-button collapsed relative flex items-center w-full p-2 text-tertiary-500 font-medium text-sm xl:text-base"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Mission
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <p
+                  class="p-2 text-tertiary-700 text-xs lg:text-sm xl:text-base"
+                >
+                  You are welcome to HounLare medical &amp; caregiver services
+                  center.We assured to you that we will provide responsible
+                  treatment to you.
+                </p>
+              </div>
+            </div>
+            <div class="border-b">
+              <h2 class="accordion-header mb-0" id="headingThree">
+                <button
+                  class="accordion-button collapsed relative flex items-center w-full p-2 text-tertiary-500 font-medium text-sm xl:text-base"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Achievement
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <p
+                  class="p-2 text-tertiary-700 text-xs lg:text-sm xl:text-base"
+                >
+                  You are welcome to HounLare medical &amp; caregiver services
+                  center.We assured to you that we will provide responsible
+                  treatment to you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about us section end -->
+
+    <!-- modal start -->
+    <div
+      class="modal fade fixed top-1/2 -translate-y-1/2 left-0 hidden w-full h-max outline-none overflow-x-hidden overflow-y-auto"
+      id="exampleModalCenter"
+      tabindex="-1"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg relative">
+        <div
+          class="modal-content relative w-full rounded-lg clip-video outline-none"
+        >
+          <video
+            class="w-full mx-auto h-max max-h-[350px] lg:max-h-[400px] xl:max-h-[520px] object-cover rounded-lg"
+            src="../assets/videos/dummy.mp4"
+            autoplay
+            controls
+            loop
+          />
+          <i
+            class="ph-x text-2xl text-red-700 bg-white/40 hover:bg-white rounded-full cursor-pointer h-10 w-10 absolute top-3 left-3 transition-all duration-300"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+    <!-- <i
+    class="ph-x text-2xl text-red-700 bg-white/40 hover:bg-white rounded-full cursor-pointer transition-all duration-300"
+  ></i> -->
+
+    <!-- facilities section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 md:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <div class="grid lg:grid-cols-2 items-center gap-6">
+        <div class="undefined">
+          <p
+            class="text-primary-600 text-xs lg:text-sm xl:text-base font-semibold lg:font-bold tracking-widest undefined"
+          >
+            Facilities
+          </p>
+          <h2
+            class="text-tertiary-500 font-bold text-2xl lg:text-3xl xl:text-[40px] lg:leading-10 xl:leading-[60px] undefined"
+          >
+            Our Facilities
+          </h2>
+          <p
+            class="text-tertiary-600 text-xs lg:text-sm xl:text-base mt-2 xl:mt-4 mb-4 xl:mb-7"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            adipiscing erat eget risus sollicitudin pellentesque et non erat.
+            Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan
+            ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc
+            posuere ut.
+          </p>
+          <div class="grid gap-2 xl:gap-4 undefined">
+            <div class="flex gap-2 xl:gap-4">
+              <img
+                src="../assets/images/icons/bullet.svg"
+                alt="icon"
+                class="h-4 xl:h-6 w-4 xl:w-6"
+              />
+              <p class="text-tertiary-600 text-xs lg:text-sm xl:text-base">
+                Morbi in sem quis dui placerat ornare. Pellentesque odio nisi
+              </p>
+            </div>
+            <div class="flex gap-2 xl:gap-4">
+              <img
+                src="../assets/images/icons/bullet.svg"
+                alt="icon"
+                class="h-4 xl:h-6 w-4 xl:w-6"
+              />
+              <p class="text-tertiary-600 text-xs lg:text-sm xl:text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+            </div>
+            <div class="flex gap-2 xl:gap-4">
+              <img
+                src="../assets/images/icons/bullet.svg"
+                alt="icon"
+                class="h-4 xl:h-6 w-4 xl:w-6"
+              />
+              <p class="text-tertiary-600 text-xs lg:text-sm xl:text-base">
+                agittis accumsan ipsum. Pellentesque ultrices
+              </p>
+            </div>
+            <div class="flex gap-2 xl:gap-4">
+              <img
+                src="../assets/images/icons/bullet.svg"
+                alt="icon"
+                class="h-4 xl:h-6 w-4 xl:w-6"
+              />
+              <p class="text-tertiary-600 text-xs lg:text-sm xl:text-base">
+                Maecenas nibh dolor, malesuada et bibendum
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid md:grid-cols-2 md:grid-rows-2 gap-4 xl:gap-6 undefined"
+        >
+          <img
+            src="../assets/images/about_us/facilities/image_0.webp"
+            alt="gallery"
+            class="rounded-[10px] h-[173px] md:h-full w-full object-cover row-span-2"
+          /><img
+            src="../assets/images/about_us/facilities/image_1.webp"
+            alt="gallery"
+            class="rounded-[10px] h-[173px] md:h-full w-full object-cover false"
+          /><img
+            src="../assets/images/about_us/facilities/image_2.webp"
+            alt="gallery"
+            class="rounded-[10px] h-[173px] md:h-full w-full object-cover false"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- facilities section end -->
+
+    <!-- counting summary section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 lg:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <div
+        class="bg-primary-600 text-white text-center px-10 py-6 md:py-10 lg:py-12 xl:py-16 rounded-md lg:rounded-xl xl:rounded-2xl flex flex-wrap justify-around gap-y-7"
+      >
+        <div class="xxs:min-w-[120px]">
+          <h2
+            class="font-bold text-white text-xl md:text-2xl lg:text-4xl xl:text-[40px] mb-2 xl:leading-[52px]"
+          >
+            <span class="count" data-stop="4132"></span>+
+          </h2>
+          <p class="font-semibold text-xxs md:text-sm lg:text-lg xl:text-xl">
+            Happy Patients
+          </p>
+        </div>
+        <div class="xxs:min-w-[120px]">
+          <h2
+            class="font-bold text-white text-xl md:text-2xl lg:text-4xl xl:text-[40px] mb-2 xl:leading-[52px]"
+          >
+            <span class="count" data-stop="24"></span>+
+          </h2>
+          <p class="font-semibold text-xxs md:text-sm lg:text-lg xl:text-xl">
+            Years Experience
+          </p>
+        </div>
+        <div class="xxs:min-w-[120px]">
+          <h2
+            class="font-bold text-white text-xl md:text-2xl lg:text-4xl xl:text-[40px] mb-2 xl:leading-[52px]"
+          >
+            <span class="count" data-stop="1530"></span>+
+          </h2>
+          <p class="font-semibold text-xxs md:text-sm lg:text-lg xl:text-xl">
+            Doctor &amp; Staff
+          </p>
+        </div>
+        <div class="xxs:min-w-[120px]">
+          <h2
+            class="font-bold text-white text-xl md:text-2xl lg:text-4xl xl:text-[40px] mb-2 xl:leading-[52px]"
+          >
+            <span class="count" data-stop="150"></span>+
+          </h2>
+          <p class="font-semibold text-xxs md:text-sm lg:text-lg xl:text-xl">
+            Hospital Room
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- counting summary section end -->
+
+    <!-- equipment section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 md:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <div class="grid lg:grid-cols-2 items-center gap-6">
+        <div class="undefined">
+          <p
+            class="text-primary-600 text-xs lg:text-sm xl:text-base font-semibold lg:font-bold tracking-widest undefined"
+          >
+            Equipments
+          </p>
+          <h2
+            class="text-tertiary-500 font-bold text-2xl lg:text-3xl xl:text-[40px] lg:leading-10 xl:leading-[60px] undefined"
+          >
+            Our Equipments
+          </h2>
+          <p
+            class="text-tertiary-600 text-xs lg:text-sm xl:text-base mt-2 xl:mt-4 mb-4 xl:mb-7"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            adipiscing erat eget risus sollicitudin pellentesque et non erat.
+            Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan
+            ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc
+            posuere ut.
+          </p>
+          <div class="grid gap-2 xl:gap-4 sm:grid-cols-2">
+            <div class="flex gap-2 xl:gap-4">
+              <img
+                src="../assets/images/icons/bullet.svg"
+                alt="icon"
+                class="h-4 xl:h-6 w-4 xl:w-6"
+              />
+              <p class="text-tertiary-600 text-xs lg:text-sm xl:text-base">
+                Morbi in sem quis
+              </p>
+            </div>
+            <div class="flex gap-2 xl:gap-4">
+              <img
+                src="../assets/images/icons/bullet.svg"
+                alt="icon"
+                class="h-4 xl:h-6 w-4 xl:w-6"
+              />
+              <p class="text-tertiary-600 text-xs lg:text-sm xl:text-base">
+                Lorem ipsum dolor
+              </p>
+            </div>
+            <div class="flex gap-2 xl:gap-4">
+              <img
+                src="../assets/images/icons/bullet.svg"
+                alt="icon"
+                class="h-4 xl:h-6 w-4 xl:w-6"
+              />
+              <p class="text-tertiary-600 text-xs lg:text-sm xl:text-base">
+                Morbi in sem quis
+              </p>
+            </div>
+            <div class="flex gap-2 xl:gap-4">
+              <img
+                src="../assets/images/icons/bullet.svg"
+                alt="icon"
+                class="h-4 xl:h-6 w-4 xl:w-6"
+              />
+              <p class="text-tertiary-600 text-xs lg:text-sm xl:text-base">
+                Lorem ipsum dolor
+              </p>
+            </div>
+            <div class="flex gap-2 xl:gap-4">
+              <img
+                src="../assets/images/icons/bullet.svg"
+                alt="icon"
+                class="h-4 xl:h-6 w-4 xl:w-6"
+              />
+              <p class="text-tertiary-600 text-xs lg:text-sm xl:text-base">
+                Morbi in sem quis
+              </p>
+            </div>
+            <div class="flex gap-2 xl:gap-4">
+              <img
+                src="../assets/images/icons/bullet.svg"
+                alt="icon"
+                class="h-4 xl:h-6 w-4 xl:w-6"
+              />
+              <p class="text-tertiary-600 text-xs lg:text-sm xl:text-base">
+                Lorem ipsum dolor
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid md:grid-cols-2 md:grid-rows-2 gap-4 xl:gap-6 undefined"
+        >
+          <img
+            src="../assets/images/about_us/equipments/image_0.webp"
+            alt="gallery"
+            class="rounded-[10px] h-[173px] md:h-full w-full object-cover row-span-2"
+          /><img
+            src="../assets/images/about_us/equipments/image_1.webp"
+            alt="gallery"
+            class="rounded-[10px] h-[173px] md:h-full w-full object-cover false"
+          /><img
+            src="../assets/images/about_us/equipments/image_2.webp"
+            alt="gallery"
+            class="rounded-[10px] h-[173px] md:h-full w-full object-cover false"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- equipment section end -->
+
+    <!-- testimonial section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 lg:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <p
+        class="text-primary-500 text-xs lg:text-sm xl:text-base font-semibold lg:font-bold tracking-widest text-center"
+      >
+        Testimonials
+      </p>
+      <h2
+        class="text-tertiary-500 font-bold text-2xl lg:text-3xl xl:text-[40px] lg:leading-10 xl:leading-[60px] text-center"
+      >
+        What our patient say”
+      </h2>
+      <p class="text-xs lg:text-sm xl:text-base text-center">
+        Best medical &amp; health services provider
+      </p>
+      <img
+        src="../assets/images/testimonial/testimonial_map.png"
+        alt="testimonial map"
+        class="my-6 w-full max-w-[568px] mx-auto"
+      />
+      <div class="grid grid-cols-12 md:gap-6 items-center testimonial-slider">
+        <div class="p-2 cursor-pointer group swiper-btn-prev">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            class="slidePrev-btn xl:text-xl text-tertiary-100 group-hover:text-primary-600 mb-10"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+            ></path>
+          </svg>
+        </div>
+        <div class="col-span-10">
+          <div class="swiper swiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="grid grid-cols-10 space-y-2 mb-10">
+                  <div
+                    class="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4"
+                  >
+                    <img
+                      src="../assets/images/testimonial/user.png"
+                      alt="testimonial"
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div>
+                      <p
+                        class="text-xxxs xxs:text-xxs lg:text-base xl:text-xl font-lato italic text-primary-700 font-bold"
+                      >
+                        Kawser Ahmed
+                      </p>
+                      <p
+                        class="text-xxxs xxs:text-xxs xl:text-xs font-lato italic text-tertiary-500"
+                      >
+                        Dhaka, Bangladesh
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600"
+                  >
+                    “Was here this past weekend and the staff was great I really
+                    do appreciate this hospital staff nurses and doctors where
+                    great and I had some delicious pasta! great hospital.”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid grid-cols-10 space-y-2 mb-10">
+                  <div
+                    class="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4"
+                  >
+                    <img
+                      src="../assets/images/testimonial/user.png"
+                      alt="testimonial"
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div>
+                      <p
+                        class="text-xxxs xxs:text-xxs lg:text-base xl:text-xl font-lato italic text-primary-700 font-bold"
+                      >
+                        Jack Sainterg
+                      </p>
+                      <p
+                        class="text-xxxs xxs:text-xxs xl:text-xs font-lato italic text-tertiary-500"
+                      >
+                        United Kingdom, UK
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600"
+                  >
+                    “Was here this past weekend and the staff was great I really
+                    do appreciate this hospital staff nurses and doctors where
+                    great and I had some delicious pasta! great hospital.”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid grid-cols-10 space-y-2 mb-10">
+                  <div
+                    class="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4"
+                  >
+                    <img
+                      src="../assets/images/testimonial/user.png"
+                      alt="testimonial"
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div>
+                      <p
+                        class="text-xxxs xxs:text-xxs lg:text-base xl:text-xl font-lato italic text-primary-700 font-bold"
+                      >
+                        John Doe
+                      </p>
+                      <p
+                        class="text-xxxs xxs:text-xxs xl:text-xs font-lato italic text-tertiary-500"
+                      >
+                        United States, USA
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600"
+                  >
+                    “Was here this past weekend and the staff was great I really
+                    do appreciate this hospital staff nurses and doctors where
+                    great and I had some delicious pasta! great hospital.”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid grid-cols-10 space-y-2 mb-10">
+                  <div
+                    class="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4"
+                  >
+                    <img
+                      src="../assets/images/testimonial/user.png"
+                      alt="testimonial"
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div>
+                      <p
+                        class="text-xxxs xxs:text-xxs lg:text-base xl:text-xl font-lato italic text-primary-700 font-bold"
+                      >
+                        Peter Dinklage
+                      </p>
+                      <p
+                        class="text-xxxs xxs:text-xxs xl:text-xs font-lato italic text-tertiary-500"
+                      >
+                        United Kingdom, UK
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600"
+                  >
+                    “Was here this past weekend and the staff was great I really
+                    do appreciate this hospital staff nurses and doctors where
+                    great and I had some delicious pasta! great hospital.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="p-2 cursor-pointer group swiper-btn-next">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            class="slideNext-btn xl:text-xl text-tertiary-100 group-hover:text-primary-600 md:ml-auto mb-10"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- testimonial section end -->
+
+    <!-- logo slider start -->
+    <div class="bg-tertiary-10 py-6 xl:py-10 serviceSlider">
+      <div class="container">
+        <div class="swiper swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_1.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_2.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_3.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_1.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_2.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_3.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_1.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_2.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+            <div class="swiper-slide px-4 w-max">
+              <img
+                src="../assets/images/services/slider_images/service_image_3.png"
+                alt="service images"
+                class="w-16 md:w-20 xl:w-40"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- logo slider end -->
+
+    <!-- footer start -->
+    <div class="text-white bg-primary-700">
+      <div class="container">
+        <a href="/"
+          ><img
+            src="../assets/images/logo/logoLight.svg"
+            alt="logo"
+            class="w-max mx-auto py-6"
+        /></a>
+        <div class="flex flex-col md:flex-row justify-around text-center">
+          <div class="w-full border-t border-b">
+            <div class="py-6 md:py-2 lg:py-5 md:my-5 false">
+              <p class="font-semibold lg:text-lg xl:text-2xl mb-2">
+                Office Address
+              </p>
+              <p class="text-xs lg:text-sm xl:text-base">
+                Kalachadpur (North Baridhara),
+              </p>
+              <p class="text-xs lg:text-sm xl:text-base">
+                Gulshan, Dhaka 1212, Bangladesh.
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:border-t md:border-b">
+            <div class="py-6 md:py-2 lg:py-5 md:my-5 md:border-l md:border-r">
+              <p class="font-semibold lg:text-lg xl:text-2xl mb-2">
+                Talk to expert
+              </p>
+              <p class="text-xs lg:text-sm xl:text-base">+9600 0012 4521</p>
+              <p class="text-xs lg:text-sm xl:text-base">+2500 0012 4522</p>
+            </div>
+          </div>
+          <div class="w-full border-t border-b">
+            <div class="py-6 md:py-2 lg:py-5 md:my-5 false">
+              <p class="font-semibold lg:text-lg xl:text-2xl mb-2">Email Us</p>
+              <p class="text-xs lg:text-sm xl:text-base">info@medicare.com</p>
+              <p class="text-xs lg:text-sm xl:text-base">
+                Example@medicare.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="py-10 grid grid-cols-12 gap-6">
+          <div
+            class="col-span-12 md:col-span-7 xl:col-span-8 flex flex-col md:flex-row justify-around lg:justify-evenly gap-6"
+          >
+            <div>
+              <p
+                class="font-semibold lg:text-lg xl:text-2xl mb-2 text-center md:text-start"
+              >
+                Quick Links
+              </p>
+              <div class="space-y-2">
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="/"
+                  >Home</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./about.html"
+                  >About Us</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./services.html"
+                  >Services</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./blog-grid.html"
+                  >Blog Grid</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./blog-list.html"
+                  >Blog List</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./contact.html"
+                  >Contact</a
+                >
+              </div>
+            </div>
+            <div>
+              <p
+                class="font-semibold lg:text-lg xl:text-2xl mb-2 text-center md:text-start"
+              >
+                Services
+              </p>
+              <div class="space-y-2">
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./services.html"
+                  >Health Check</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./services.html"
+                  >Doctor Appointment</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./services.html"
+                  >Online Pharmacy</a
+                >
+                <a
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                  href="./services.html"
+                  >Abmulace Service</a
+                >
+              </div>
+            </div>
+            <div>
+              <p
+                class="font-semibold lg:text-lg xl:text-2xl mb-2 text-center md:text-start"
+              >
+                Open Hours
+              </p>
+              <div class="space-y-2">
+                <p
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                >
+                  Open at 09: 00 AM
+                </p>
+                <p
+                  class="text-center md:text-start text-xs lg:text-sm xl:text-base block"
+                >
+                  Close at 11.00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-12 md:col-span-5 xl:col-span-4 w-max mx-auto md:mx-0 space-y-2 text-center md:text-start"
+          >
+            <form class="flex items-center gap-3">
+              <input
+                type="email"
+                placeholder="Enter your email adderss"
+                class="bg-transparent border rounded px-3 md:px-4 py-2 placeholder-white text-xs lg:text-sm xl:text-base outline-0 focus:shadow-xl"
+              />
+              <button
+                type="submit"
+                class="px-3 lg:px-7 py-2 bg-primary-500 hover:bg-primary-600 hover:shadow-xl rounded border text-xs lg:text-sm xl:text-base transition-all duration-300"
+              >
+                Send
+              </button>
+            </form>
+            <p class="text-xs lg:text-sm">Subcribe to get updates</p>
+            <p class="font-semibold pt-4">Follow Us</p>
+            <div class="flex items-center gap-2 w-max mx-auto md:mx-0">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.linkedin.com/"
+              >
+                <img
+                  src="../assets/images/social/linkedIn.svg"
+                  alt="linkedIn logo"
+                />
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.facebook.com/"
+              >
+                <img
+                  src="../assets/images/social/facebook.svg"
+                  alt="facebook logo"
+                />
+              </a>
+              <a rel="noreferrer" target="_blank" href="https://twitter.com/">
+                <img
+                  src="../assets/images/social/twitter.svg"
+                  alt="twitter logo"
+                />
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.instagram.com/"
+              >
+                <img
+                  src="../assets/images/social/instagram.svg"
+                  alt="instagram logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        class="py-3 text-center text-xs lg:text-sm xl:text-base bg-primary-600"
+      >
+        copyright ©2022 reserved by&nbsp;<span class="xl:font-semibold"
+          >medical healthcare center</span
+        >
+      </p>
+    </div>
+    <!-- footer end -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/common.js"></script>
+  </body>
+</html>
