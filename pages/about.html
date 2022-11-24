@@ -561,16 +561,14 @@
             controls
             loop
           />
-          <i
-            class="ph-x text-2xl text-red-700 bg-white/40 hover:bg-white rounded-full cursor-pointer h-10 w-10 absolute top-3 left-3 transition-all duration-300"
-          ></i>
         </div>
+        <i
+          data-bs-dismiss="modal"
+          class="ph-x text-lg text-red-700 bg-white/40 hover:bg-white rounded-full cursor-pointer p-1 absolute top-3 right-3 transition-all duration-300"
+        ></i>
       </div>
     </div>
     <!-- modal end -->
-    <!-- <i
-    class="ph-x text-2xl text-red-700 bg-white/40 hover:bg-white rounded-full cursor-pointer transition-all duration-300"
-  ></i> -->
 
     <!-- facilities section start -->
     <div
@@ -1318,5 +1316,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/common.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
   </body>
 </html>

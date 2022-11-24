@@ -297,6 +297,588 @@
     </header>
     <!-- navbar end -->
 
+    <!-- banner section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="bg-tertiary-10 py-6 lg:py-10 xl:py-20 2xl:h-[510px] flex justify-center items-center aos-init aos-animate"
+    >
+      <div class="container grid grid-cols-12 items-center gap-6">
+        <div class="col-span-12 md:col-span-7">
+          <h2
+            class="text-tertiary-500 font-semibold text-xl lg:text-2xl xl:text-4xl 2xl:text-5xl"
+          >
+            Get Your
+          </h2>
+          <h1
+            class="text-primary-600 font-bold text-2xl lg:text-3xl xl:text-5xl 2xl:text-[64px] lg:leading-10 xl:leading-[60px] 2xl:leading-[96px]"
+          >
+            Appointment
+          </h1>
+          <p
+            class="text-tertiary-600 text-xs lg:text-sm xl:text-lg mt-2 xl:mt-4 w-11/12"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            adipiscing erat eget risus sollicitudin pellentesque et non erat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="col-span-12 md:col-span-5">
+          <img
+            src="../assets/images/appointment/apppointment_banner.png"
+            alt="banner"
+            class="w-5/6 md:w-full mx-auto max-h-[435px] object-contain animate-img"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- banner section end -->
+
+    <!-- appointment form section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 md:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <h4 class="text-tertiary-500 font-semibold text-2xl mb-2">
+        Appointment Form
+      </h4>
+      <hr />
+      <div class="grid grid-cols-12 gap-6 mt-6">
+        <div class="col-span-12 lg:col-span-7 xl:col-span-8">
+          <form class="grid grid-cols-2 gap-6">
+            <input
+              type="text"
+              placeholder="Patient Name*"
+              class="col-span-2 md:col-span-1 w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"
+              value=""
+            /><input
+              type="number"
+              placeholder="Phone*"
+              class="col-span-2 md:col-span-1 w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"
+              value=""
+            />
+            <div class="relative">
+              <select
+                class="w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"
+              >
+                <option value="">Appointment for*</option>
+                <option value="0">Neurology</option>
+                <option value="1">Urology</option>
+                <option value="2">Pathology</option>
+                <option value="3">Medicine</option>
+                <option value="4">Neurology</option>
+                <option value="5">Surgery</option>
+                <option value="6">Urology</option>
+                <option value="7">Neurology</option>
+                <option value="8">Surgery</option>
+                <option value="9">Medicine</option>
+                <option value="10">Pathology</option>
+                <option value="11">Surgery</option></select
+              ><svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="text-xl text-tertiary-300 absolute top-1/2 right-3 -translate-y-1/2"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </div>
+            <div class="relative">
+              <div class="react-datepicker-wrapper">
+                <div class="react-datepicker__input-container">
+                  <input
+                    type="text"
+                    placeholder="Date*"
+                    class="w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"
+                    value=""
+                  />
+                </div>
+              </div>
+              <img
+                src="../assets/images/icons/calendar.svg"
+                alt="icon"
+                class="absolute top-1/2 right-3 -translate-y-1/2"
+              />
+            </div>
+            <div class="relative">
+              <select
+                class="w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"
+              >
+                <option value="">Choose Doctor*</option>
+                <option value="0">Dr. Abul Hasan</option>
+                <option value="1">Dr. Patrick Soon</option>
+                <option value="2">Dr. Myles. B. Abbott</option>
+                <option value="3">Dr. Fouad. M. Abbas</option>
+                <option value="4">Dr. Khalid Abbed</option>
+                <option value="5">Dr. Naresh Trehan</option>
+                <option value="6">Dr. Corrie</option>
+                <option value="7">Dr. Mark. F. Aaron</option>
+                <option value="8">Dr. Khalid Abbed</option>
+                <option value="9">Dr. Naresh Trehan</option>
+                <option value="10">Dr. William A. Abdu</option>
+                <option value="11">Dr. Myles</option></select
+              ><svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="text-xl text-tertiary-300 absolute top-1/2 right-3 -translate-y-1/2"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </div>
+            <div class="relative">
+              <select
+                class="w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"
+              >
+                <option value="">Prepared Time*</option>
+                <option value="0">2:00 PM</option>
+                <option value="1">3:00 PM</option>
+                <option value="2">4:00 PM</option>
+                <option value="3">5:00 PM</option>
+                <option value="4">6:00 PM</option>
+                <option value="5">7:00 PM</option>
+                <option value="6">8:00 PM</option>
+                <option value="7">9:00 PM</option></select
+              ><img
+                src="../assets/images/icons/watch.svg"
+                alt="icon"
+                class="absolute top-1/2 right-3 -translate-y-1/2"
+              />
+            </div>
+            <input
+              type="email"
+              placeholder="Your Email (optional)"
+              class="col-span-2 w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"
+              value=""
+            />
+            <textarea
+              type="text"
+              rows="4"
+              placeholder="Your Message..."
+              class="col-span-2 w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 resize-none transition-all duration-300"
+            >
+            </textarea>
+            <button
+              type="submit"
+              class="z-10 relative overflow-hidden btn-slide-secondary col-span-2 w-max mx-auto lg:mx-0 px-6 py-2.5 rounded-lg text-white text-xs md:text-sm xl:text-base shadow-[0px_8px_16px_0px_rgba(145,158,171,0.16)]"
+            >
+              Make an Appointment
+            </button>
+          </form>
+        </div>
+        <div class="col-span-12 lg:col-span-5 xl:col-span-4">
+          <div
+            class="px-4 xl:px-6 py-7 xl:py-16 border rounded-[10px] w-full mx-auto"
+          >
+            <img
+              src="../assets/images/icons/consultation.svg"
+              alt="appointment icon"
+              class="h-16 2xl:h-20 w-16 2xl:w-20 mx-auto"
+            />
+            <p
+              class="text-tertiary-600 2xl:text-xl font-bold text-center mt-2 mb-3"
+            >
+              Book your Consultation
+            </p>
+            <p class="text-tertiary-80 text-sm 2xl:text-base text-center">
+              You can book a first consultation meeting which is free of charge,
+              to talk about what you are looking for.
+            </p>
+            <a
+              href="tel:+95552 88559"
+              class="flex items-center gap-1.5 px-8 py-3 rounded-[10px] w-max mx-auto bg-primary-700 mt-12"
+              ><img
+                src="../assets/images/icons/phone.svg"
+                alt="icon"
+                class="h-6 2xl:h-8 w-6 2xl:w-8"
+              />
+              <p class="text-white font-semibold lg:text-lg 2xl:text-2xl">
+                +95552 88559
+              </p></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- appointment form section end -->
+
+    <!-- why us section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 md:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <div class="grid grid-cols-12 gap-4 xl:gap-6">
+        <div
+          class="col-span-12 lg:col-span-7 xl:col-span-8 p-6 xl:p-10 border rounded-[10px]"
+        >
+          <p class="text-tertiary-500 font-bold text-2xl 2xl:text-4xl mb-10">
+            Why Appointment with Us
+          </p>
+          <div class="space-y-6">
+            <div>
+              <p class="text-tertiary-600 font-semibold 2xl:text-xl mb-2">
+                24/7 Hours Available
+              </p>
+              <p class="text-tertiary-100 text-xs 2xl:text-base">
+                Integer nec nisi sed mi hendrerit mattis. Vestibulum mi nunc,
+                ultricies quis vehicula et, iaculis in magnestibulum quis
+                ultricies quis vehicula et feugiat risus.
+              </p>
+            </div>
+            <div>
+              <p class="text-tertiary-600 font-semibold 2xl:text-xl mb-2">
+                Experienced Staff Available
+              </p>
+              <p class="text-tertiary-100 text-xs 2xl:text-base">
+                Aliquam sit amet mi eu libero fermentum ultricies quis vehicula
+                et quis feugiat risus bibendum pulvinar a turpis. Vestibulum
+                quis feugiat risus.
+              </p>
+            </div>
+            <div>
+              <p class="text-tertiary-600 font-semibold 2xl:text-xl mb-2">
+                Low Price &amp; Fees
+              </p>
+              <p class="text-tertiary-100 text-xs 2xl:text-base">
+                Praesent eu sollicitudin nunc. Cras malesuada ultricies quis
+                vehicula et vel quis feugiat risus nisi consequat pretium.
+                Integer auctor elementum nulla suscipit in.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-5 xl:col-span-4">
+          <div
+            class="px-4 xl:px-6 py-7 border bg-tertiary-10 rounded-[10px] h-full w-full mx-auto"
+          >
+            <img
+              src="../assets/images/icons/appointmentHours.svg"
+              alt="appointment icon"
+              class="h-16 2xl:h-20 w-16 2xl:w-20 mx-auto"
+            />
+            <p
+              class="text-tertiary-600 2xl:text-xl font-bold text-center mt-2 mb-6"
+            >
+              Opening Hours
+            </p>
+            <div class="space-y-3 xl:px-4 max-w-xs xl:max-w-sm mx-auto">
+              <div class="grid grid-cols-2 gap-4">
+                <p
+                  class="text-tertiary-600 text-xs 2xl:text-base xl:font-medium"
+                >
+                  1. Saturday
+                </p>
+                <p
+                  class="text-tertiary-200 text-xs 2xl:text-base font-semibold text-end"
+                >
+                  8.00 am – 10.00 pm
+                </p>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <p
+                  class="text-tertiary-600 text-xs 2xl:text-base xl:font-medium"
+                >
+                  2. Sunday
+                </p>
+                <p
+                  class="text-tertiary-200 text-xs 2xl:text-base font-semibold text-end"
+                >
+                  8.00 am – 10.00 pm
+                </p>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <p
+                  class="text-tertiary-600 text-xs 2xl:text-base xl:font-medium"
+                >
+                  3. Monday
+                </p>
+                <p
+                  class="text-tertiary-200 text-xs 2xl:text-base font-semibold text-end"
+                >
+                  8.00 am – 10.00 pm
+                </p>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <p
+                  class="text-tertiary-600 text-xs 2xl:text-base xl:font-medium"
+                >
+                  4. Tuesday
+                </p>
+                <p
+                  class="text-tertiary-200 text-xs 2xl:text-base font-semibold text-end"
+                >
+                  8.00 am – 10.00 pm
+                </p>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <p
+                  class="text-tertiary-600 text-xs 2xl:text-base xl:font-medium"
+                >
+                  5. Wednesday
+                </p>
+                <p
+                  class="text-tertiary-200 text-xs 2xl:text-base font-semibold text-end"
+                >
+                  8.00 am – 10.00 pm
+                </p>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <p
+                  class="text-tertiary-600 text-xs 2xl:text-base xl:font-medium"
+                >
+                  6. Thursday
+                </p>
+                <p
+                  class="text-tertiary-200 text-xs 2xl:text-base font-semibold text-end"
+                >
+                  8.00 am – 10.00 pm
+                </p>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <p
+                  class="text-tertiary-600 text-xs 2xl:text-base xl:font-medium"
+                >
+                  7. Friday
+                </p>
+                <p
+                  class="text-tertiary-200 text-xs 2xl:text-base font-semibold text-end"
+                >
+                  10.00 am – 9.00 pm
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- why us section end -->
+
+    <!-- testimonial section start -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      class="container py-6 lg:py-10 xl:py-16 aos-init aos-animate"
+    >
+      <p
+        class="text-primary-500 text-xs lg:text-sm xl:text-base font-semibold lg:font-bold tracking-widest text-center"
+      >
+        Testimonials
+      </p>
+      <h2
+        class="text-tertiary-500 font-bold text-2xl lg:text-3xl xl:text-[40px] lg:leading-10 xl:leading-[60px] text-center"
+      >
+        What our patient say”
+      </h2>
+      <p class="text-xs lg:text-sm xl:text-base text-center">
+        Best medical &amp; health services provider
+      </p>
+      <img
+        src="../assets/images/testimonial/testimonial_map.png"
+        alt="testimonial map"
+        class="my-6 w-full max-w-[568px] mx-auto"
+      />
+      <div class="grid grid-cols-12 md:gap-6 items-center testimonial-slider">
+        <div class="p-2 cursor-pointer group swiper-btn-prev">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            class="slidePrev-btn xl:text-xl text-tertiary-100 group-hover:text-primary-600 mb-10"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+            ></path>
+          </svg>
+        </div>
+        <div class="col-span-10">
+          <div class="swiper swiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="grid grid-cols-10 space-y-2 mb-10">
+                  <div
+                    class="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4"
+                  >
+                    <img
+                      src="../assets/images/testimonial/user.png"
+                      alt="testimonial"
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div>
+                      <p
+                        class="text-xxxs xxs:text-xxs lg:text-base xl:text-xl font-lato italic text-primary-700 font-bold"
+                      >
+                        Kawser Ahmed
+                      </p>
+                      <p
+                        class="text-xxxs xxs:text-xxs xl:text-xs font-lato italic text-tertiary-500"
+                      >
+                        Dhaka, Bangladesh
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600"
+                  >
+                    “Was here this past weekend and the staff was great I really
+                    do appreciate this hospital staff nurses and doctors where
+                    great and I had some delicious pasta! great hospital.”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid grid-cols-10 space-y-2 mb-10">
+                  <div
+                    class="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4"
+                  >
+                    <img
+                      src="../assets/images/testimonial/user.png"
+                      alt="testimonial"
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div>
+                      <p
+                        class="text-xxxs xxs:text-xxs lg:text-base xl:text-xl font-lato italic text-primary-700 font-bold"
+                      >
+                        Jack Sainterg
+                      </p>
+                      <p
+                        class="text-xxxs xxs:text-xxs xl:text-xs font-lato italic text-tertiary-500"
+                      >
+                        United Kingdom, UK
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600"
+                  >
+                    “Was here this past weekend and the staff was great I really
+                    do appreciate this hospital staff nurses and doctors where
+                    great and I had some delicious pasta! great hospital.”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid grid-cols-10 space-y-2 mb-10">
+                  <div
+                    class="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4"
+                  >
+                    <img
+                      src="../assets/images/testimonial/user.png"
+                      alt="testimonial"
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div>
+                      <p
+                        class="text-xxxs xxs:text-xxs lg:text-base xl:text-xl font-lato italic text-primary-700 font-bold"
+                      >
+                        John Doe
+                      </p>
+                      <p
+                        class="text-xxxs xxs:text-xxs xl:text-xs font-lato italic text-tertiary-500"
+                      >
+                        United States, USA
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600"
+                  >
+                    “Was here this past weekend and the staff was great I really
+                    do appreciate this hospital staff nurses and doctors where
+                    great and I had some delicious pasta! great hospital.”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid grid-cols-10 space-y-2 mb-10">
+                  <div
+                    class="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4"
+                  >
+                    <img
+                      src="../assets/images/testimonial/user.png"
+                      alt="testimonial"
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div>
+                      <p
+                        class="text-xxxs xxs:text-xxs lg:text-base xl:text-xl font-lato italic text-primary-700 font-bold"
+                      >
+                        Peter Dinklage
+                      </p>
+                      <p
+                        class="text-xxxs xxs:text-xxs xl:text-xs font-lato italic text-tertiary-500"
+                      >
+                        United Kingdom, UK
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600"
+                  >
+                    “Was here this past weekend and the staff was great I really
+                    do appreciate this hospital staff nurses and doctors where
+                    great and I had some delicious pasta! great hospital.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="p-2 cursor-pointer group swiper-btn-next">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            class="slideNext-btn xl:text-xl text-tertiary-100 group-hover:text-primary-600 md:ml-auto mb-10"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- testimonial section end -->
+
     <!-- logo slider start -->
     <div class="bg-tertiary-10 py-6 xl:py-10 serviceSlider">
       <div class="container">
@@ -582,5 +1164,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/common.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
   </body>
 </html>
