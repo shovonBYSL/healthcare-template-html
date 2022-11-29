@@ -2288,6 +2288,14 @@ select {
     top: 1rem;
   }
 
+  .lg\:order-2 {
+    order: 2;
+  }
+
+  .lg\:order-1 {
+    order: 1;
+  }
+
   .lg\:col-span-3 {
     grid-column: span 3 / span 3;
   }
