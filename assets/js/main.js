@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  $("#menu-button").on("click", function () {
+    $("#menu").slideToggle(600);
+  });
+
   // loader start
   $(".loader").fadeTo(1500, 1).fadeOut(300);
   // loader end
