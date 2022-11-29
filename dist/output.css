@@ -1210,10 +1210,6 @@ video {
   overflow-x: hidden;
 }
 
-.whitespace-pre-line {
-  white-space: pre-line;
-}
-
 .rounded-sm {
   border-radius: 0.125rem;
 }

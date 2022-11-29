@@ -356,7 +356,7 @@
               class="col-span-2 md:col-span-1 w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"
               value=""
             /><input
-              type="number"
+              type="text"
               placeholder="Phone*"
               class="col-span-2 md:col-span-1 w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"
               value=""
@@ -397,21 +397,17 @@
               </svg>
             </div>
             <div class="relative">
-              <div class="react-datepicker-wrapper">
-                <div class="react-datepicker__input-container">
-                  <input
-                    type="text"
-                    placeholder="Date*"
-                    class="w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"
-                    value=""
-                  />
-                </div>
-              </div>
-              <img
+              <input
+                type="date"
+                placeholder="Date*"
+                class="w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"
+                value=""
+              />
+              <!-- <img
                 src="../assets/images/icons/calendar.svg"
                 alt="icon"
                 class="absolute top-1/2 right-3 -translate-y-1/2"
-              />
+              /> -->
             </div>
             <div class="relative">
               <select
@@ -478,8 +474,7 @@
               rows="4"
               placeholder="Your Message..."
               class="col-span-2 w-full bg-transparent text-tertiary-300 placeholder-tertiary-300 border focus:border-tertiary-50 rounded px-3 py-2.5 2xl:p-4 text-xs xl:text-base outline-0 resize-none transition-all duration-300"
-            >
-            </textarea>
+            ></textarea>
             <button
               type="submit"
               class="z-10 relative overflow-hidden btn-slide-secondary col-span-2 w-max mx-auto lg:mx-0 px-6 py-2.5 rounded-lg text-white text-xs md:text-sm xl:text-base shadow-[0px_8px_16px_0px_rgba(145,158,171,0.16)]"
