@@ -22,4 +22,6 @@ $(document).ready(function () {
     );
   });
   // count up ended
+
+  $("#datepicker").datepicker();
 });
